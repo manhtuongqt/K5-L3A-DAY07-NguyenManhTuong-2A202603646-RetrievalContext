@@ -1,0 +1,29 @@
+{
+  "method": "dense",
+  "query_kind": "original",
+  "top_k": 3,
+  "config": {},
+  "cases": 17,
+  "errors": 0,
+  "hit1": {
+    "n": 12,
+    "N": 15,
+    "rate": 0.8
+  },
+  "hit3": {
+    "n": 13,
+    "N": 15,
+    "rate": 0.8666666666666667
+  },
+  "actual_returned_distribution": {
+    "3": 17
+  },
+  "elapsed_ms": {
+    "total": 230.04980012774467,
+    "median": 12.69530039280653
+  },
+  "api_cost_usd": 0,
+  "cost_scope": "Local embedding/vector/lexical retrieval only; hardware/electricity excluded.",
+  "recorded_at": "2026-11-14T08:57:23.535047+00:00",
+  "benchmark_lock_sha256": "f231fa49d3726a8021b471cfbb8337673f188926fe95e1b5d515084d8064f0f3"
+}

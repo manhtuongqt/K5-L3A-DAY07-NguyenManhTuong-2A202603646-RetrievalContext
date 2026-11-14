@@ -1,0 +1,7 @@
+* text=auto eol=lf
+benchmark/** -text -whitespace
+data/** -text -whitespace
+configs/** -text whitespace=cr-at-eol
+results/** -text -whitespace
+src/** -text whitespace=cr-at-eol
+scripts/** -text whitespace=cr-at-eol

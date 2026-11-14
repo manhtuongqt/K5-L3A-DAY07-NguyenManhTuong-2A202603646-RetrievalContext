@@ -1,0 +1,11 @@
+{
+  "verified_at": "2026-11-14T09:24:56.054574+00:00",
+  "frozen_staged_files_checked": 42,
+  "all_frozen_SHA256_equal": true,
+  "tracked_files": 241,
+  "private_files_tracked": false,
+  "configured_secret_values_found": false,
+  "largest_file_bytes": 874150,
+  "largest_file": "results/agent/dev/C3/traces.json",
+  "scope": "Staged Git blobs, including raw CRLF source/benchmark/audit bytes; secrets checked against configured local key only."
+}

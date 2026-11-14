@@ -1,0 +1,27 @@
+{
+  "method": "dense",
+  "query_kind": "original",
+  "top_k": 3,
+  "config": {},
+  "cases": 7,
+  "errors": 0,
+  "hit1": {
+    "n": 2,
+    "N": 5,
+    "rate": 0.4
+  },
+  "hit3": {
+    "n": 4,
+    "N": 5,
+    "rate": 0.8
+  },
+  "actual_returned_distribution": {
+    "3": 7
+  },
+  "elapsed_ms": {
+    "total": 122.29450140148401,
+    "median": 17.255600541830063
+  },
+  "api_cost_usd": 0,
+  "cost_scope": "Local embedding/vector/lexical retrieval only; hardware/electricity excluded."
+}

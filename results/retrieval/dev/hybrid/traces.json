@@ -1,0 +1,2148 @@
+[
+  {
+    "query_id": "D01",
+    "split": "dev",
+    "question": "What happens if list.remove(value) cannot find that value?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "72937960d96ffe7f906566ae4ebcd78c",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "72937960d96ffe7f906566ae4ebcd78c",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u003",
+        "text": "There is a way to remove an item from a list given its index instead of its\nvalue: the del statement.  This differs from the pop() method\nwhich returns a value.  The del statement can also be used to remove\nslices from a list or clear the entire list (which we did earlier by assignment\nof an empty list to the slice).  For example:\n\n>>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n>>> del a[0]\n>>> a\n[1, 66.25, 333, 333, 1234.5]\n>>> del a[2:4]\n>>> a\n[1, 66.25, 1234.5]\n>>> del a[:]\n>>> a\n[]\n\ndel can also be used to delete entire variables:\n\n>>> del a\n\nReferencing the name a hereafter is an error (at least until another value\nis assigned to it).  We’ll find other uses for del later.\n\n5.3. Tuples and Sequences\n\n",
+        "start": 1674,
+        "end": 2382,
+        "source_start": 9087,
+        "source_end": 9795,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 1,
+        "score": 0.03252247488101534,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7628030024245869,
+          "bm25": 13.422047660951096
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "feba6187e315019f32f0a03191c08122",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "feba6187e315019f32f0a03191c08122",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u001",
+        "text": "Remove the item at the given position in the list, and return it.  If no index\nis specified, a.pop() removes and returns the last item in the list.\nIt raises an IndexError if the list is empty or the index is\noutside the list range.\n\nlist. clear ( )\n\nRemove all items from the list.  Similar to del a[:] .\n\nlist. index ( value [ , start [ , stop ] ] )\n\nReturn zero-based index of the first occurrence of value in the list.\nRaises a ValueError if there is no such item.\n\nThe optional arguments start and end are interpreted as in the slice\nnotation and are used to limit the search to a particular subsequence of\nthe list.  The returned index is computed relative to the beginning of the full\nsequence rather than the start argument.\n\nlist. count ( value , / )\n\nReturn the number of times value appears in the list.\n\nlist. sort ( * , key = None , reverse = False )\n\nSort the items of the list in place (the arguments can be used for sort\ncustomization, see sorted() for their explanation).\n\n",
+        "start": 898,
+        "end": 1888,
+        "source_start": 898,
+        "source_end": 1888,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 2,
+        "score": 0.032018442622950824,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 4
+        },
+        "branch_scores": {
+          "dense": 0.7726410134532964,
+          "bm25": 11.231287052326904
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "bc5a0db5f362712ca87e184bea16ba89",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "bc5a0db5f362712ca87e184bea16ba89",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u001",
+        "text": "list. reverse ( )\n\nReverse the elements of the list in place.\n\nlist. copy ( )\n\nReturn a shallow copy of the list.  Similar to a[:] .\n\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4)  # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\nYou might have noticed that methods like insert , remove or sort that\nonly modify the list have no return value printed – they return the default None . [ 1 ] This is a design principle for all mutable data structures in\nPython.\n\n",
+        "start": 1888,
+        "end": 2879,
+        "source_start": 1888,
+        "source_end": 2879,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 3,
+        "score": 0.0315136476426799,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.6717799656715093,
+          "bm25": 12.321439802022393
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": false,
+    "hit3": false,
+    "elapsed_ms": 13.844799250364304
+  },
+  {
+    "query_id": "D02",
+    "split": "dev",
+    "question": "In the tutorial, which container supports a queue with fast appends and pops at either end?",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "1da22d5a24921df303d7c7e1e5050ad3",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "1da22d5a24921df303d7c7e1e5050ad3",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u002",
+        "text": ">>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n5.1.2. Using Lists as Queues\n\nIt is also possible to use a list as a queue, where the first element added is\nthe first element retrieved (“first-in, first-out”); however, lists are not\nefficient for this purpose.  While appends and pops from the end of list are\nfast, doing inserts or pops from the beginning of a list is slow (because all\nof the other elements have to be shifted by one).\n\nTo implement a queue, use collections.deque which was designed to\nhave fast appends and pops from both ends.  For example:\n\n",
+        "start": 0,
+        "end": 698,
+        "source_start": 3552,
+        "source_end": 4250,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7621275388498734,
+          "bm25": 34.28158101311366
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "6f2bd8b85da0fdf48d2db330415246c3",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "6f2bd8b85da0fdf48d2db330415246c3",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u002",
+        "text": ">>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n5.1.3. List Comprehensions\n\nList comprehensions provide a concise way to create lists.\nCommon applications are to make new lists where each element is the result of\nsome operations applied to each member of another sequence or iterable, or to\ncreate a subsequence of those elements that satisfy a certain condition.\n\nFor example, assume we want to create a list of squares, like:\n\n>>> squares = []\n>>> for x in range(10):\n...     squares.append(x**2)\n...\n>>> squares\n[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\n\n",
+        "start": 698,
+        "end": 1655,
+        "source_start": 4250,
+        "source_end": 5207,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.6702598685841417,
+          "bm25": 10.508535358759774
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "6edcf60cf3ac77bc78215a9b5fbd9b61",
+        "source_id": "tutorial_classes",
+        "chunk_id": "6edcf60cf3ac77bc78215a9b5fbd9b61",
+        "document_id": "tutorial_classes",
+        "source": "https://docs.python.org/3.13/tutorial/classes.html",
+        "page": "tutorial_classes:u008",
+        "text": "This style of access is clear, concise, and convenient.  The use of iterators\npervades and unifies Python.  Behind the scenes, the for statement\ncalls iter() on the container object.  The function returns an iterator\nobject that defines the method __next__() which accesses\nelements in the container one at a time.  When there are no more elements, __next__() raises a StopIteration exception which tells the for loop to terminate.  You can call the __next__() method\nusing the next() built-in function; this example shows how it all works:",
+        "start": 3436,
+        "end": 3976,
+        "source_start": 29807,
+        "source_end": 30347,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "9. Classes"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "9. Classes",
+        "rank": 3,
+        "score": 0.031754032258064516,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 4,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.6051973580679387,
+          "bm25": 11.689558929456176
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 21.548700518906116
+  },
+  {
+    "query_id": "D03",
+    "split": "dev",
+    "question": "Under what condition can a tuple be used as a dictionary key, and what disqualifies it?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "8f257d50689da00b6cba2c5c20f413ba",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "8f257d50689da00b6cba2c5c20f413ba",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u004",
+        "text": "Another useful data type built into Python is the dictionary (see Mapping Types — dict ). Dictionaries are sometimes found in other languages as\n“associative memories” or “associative arrays”.  Unlike sequences, which are\nindexed by a range of numbers, dictionaries are indexed by keys , which can be\nany immutable type; strings and numbers can always be keys.  Tuples can be used\nas keys if they contain only strings, numbers, or tuples; if a tuple contains\nany mutable object either directly or indirectly, it cannot be used as a key.\nYou can’t use lists as keys, since lists can be modified in place using index\nassignments, slice assignments, or methods like append() and extend() .",
+        "start": 3194,
+        "end": 3880,
+        "source_start": 14283,
+        "source_end": 14969,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7878142627813313,
+          "bm25": 15.880393735714886
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "ee9976cb5807109c66f21fe6255243b7",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "ee9976cb5807109c66f21fe6255243b7",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u005",
+        "text": "It is best to think of a dictionary as a set of key: value pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {} . Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.\n\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del . If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.\n\nExtracting a value for a non-existent key by subscripting ( d[key] ) raises a KeyError . To avoid getting this error when trying to access a possibly\nnon-existent key, use the get() method instead, which returns None (or a specified default value) if the key is not in the dictionary.\n\n",
+        "start": 0,
+        "end": 920,
+        "source_start": 14971,
+        "source_end": 15891,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 2,
+        "score": 0.030798389007344232,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 7,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7109037914567607,
+          "bm25": 13.709683466733047
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "da712752e1ec61599a17c3bdb4d71859",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "da712752e1ec61599a17c3bdb4d71859",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u005",
+        "text": "In addition, dict comprehensions can be used to create dictionaries from\narbitrary key and value expressions:\n\n>>> {x: x**2 for x in (2, 4, 6)}\n{2: 4, 4: 16, 6: 36}\n\nWhen the keys are simple strings, it is sometimes easier to specify pairs using\nkeyword arguments:\n\n>>> dict(sape=4139, guido=4127, jack=4098)\n{'sape': 4139, 'guido': 4127, 'jack': 4098}\n\n5.6. Looping Techniques\n\nWhen looping through dictionaries, the key and corresponding value can be\nretrieved at the same time using the items() method.\n\n>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n>>> for k, v in knights.items():\n...     print(k, v)\n...\ngallahad the pure\nrobin the brave\n\nWhen looping through a sequence, the position index and corresponding value can\nbe retrieved at the same time using the enumerate() function.\n\n>>> for i, v in enumerate(['tic', 'tac', 'toe']):\n...     print(i, v)\n...\n0 tic\n1 tac\n2 toe\n\n",
+        "start": 1890,
+        "end": 2786,
+        "source_start": 16861,
+        "source_end": 17757,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 3,
+        "score": 0.03057889822595705,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 8
+        },
+        "branch_scores": {
+          "dense": 0.7406880383306791,
+          "bm25": 8.64118932265487
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 17.06739980727434
+  },
+  {
+    "query_id": "D04",
+    "split": "dev",
+    "question": "How can I test whether a single key is present in a dictionary?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "22a033d16af0dd115d764e7e7c446bb6",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "22a033d16af0dd115d764e7e7c446bb6",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u005",
+        "text": "Performing list(d) on a dictionary returns a list of all the keys\nused in the dictionary, in insertion order (if you want it sorted, just use sorted(d) instead). To check whether a single key is in the\ndictionary, use the in keyword.\n\nHere is a small example using a dictionary:\n\n>>> tel = {'jack': 4098, 'sape': 4139}\n>>> tel['guido'] = 4127\n>>> tel\n{'jack': 4098, 'sape': 4139, 'guido': 4127}\n>>> tel['jack']\n4098\n>>> tel['irv']\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nKeyError: 'irv'\n>>> print(tel.get('irv'))\nNone\n>>> del tel['sape']\n>>> tel['irv'] = 4127\n>>> tel\n{'jack': 4098, 'guido': 4127, 'irv': 4127}\n>>> list(tel)\n['jack', 'guido', 'irv']\n>>> sorted(tel)\n['guido', 'irv', 'jack']\n>>> 'guido' in tel\nTrue\n>>> 'jack' not in tel\nFalse\n\nThe dict() constructor builds dictionaries directly from sequences of\nkey-value pairs:\n\n>>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])\n{'sape': 4139, 'guido': 4127, 'jack': 4098}\n\n",
+        "start": 920,
+        "end": 1890,
+        "source_start": 15891,
+        "source_end": 16861,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7761433196833957,
+          "bm25": 15.610986397062558
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "ee9976cb5807109c66f21fe6255243b7",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "ee9976cb5807109c66f21fe6255243b7",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u005",
+        "text": "It is best to think of a dictionary as a set of key: value pairs,\nwith the requirement that the keys are unique (within one dictionary). A pair of\nbraces creates an empty dictionary: {} . Placing a comma-separated list of\nkey:value pairs within the braces adds initial key:value pairs to the\ndictionary; this is also the way dictionaries are written on output.\n\nThe main operations on a dictionary are storing a value with some key and\nextracting the value given the key.  It is also possible to delete a key:value\npair with del . If you store using a key that is already in use, the old\nvalue associated with that key is forgotten.\n\nExtracting a value for a non-existent key by subscripting ( d[key] ) raises a KeyError . To avoid getting this error when trying to access a possibly\nnon-existent key, use the get() method instead, which returns None (or a specified default value) if the key is not in the dictionary.\n\n",
+        "start": 0,
+        "end": 920,
+        "source_start": 14971,
+        "source_end": 15891,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.6891366517937025,
+          "bm25": 12.733719318720528
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "182c8945323cda457778def905298ba0",
+        "source_id": "library_json",
+        "chunk_id": "182c8945323cda457778def905298ba0",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u002",
+        "text": "default ( callable | None) – A function that is called for objects that can’t otherwise be serialized.\nIt should return a JSON encodable version of the object\nor raise a TypeError .\nIf None (the default), TypeError is raised.\n\nsort_keys ( bool ) – If True , dictionaries will be outputted sorted by key.\nDefault False .\n\nNote\n\nKeys in key/value pairs of JSON are always of the type str . When\na dictionary is converted into JSON, all the keys of the dictionary are\nconverted to strings. As a result of this, if a dictionary is converted\ninto JSON and then back into a dictionary, the dictionary may not equal\nthe original one. That is, loads(dumps(x)) != x if x has non-string\nkeys. sort_keys sorts the keys before they are converted to strings,\nso numeric keys are sorted by value, not by their string representation.",
+        "start": 2712,
+        "end": 3530,
+        "source_start": 6341,
+        "source_end": 7159,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 3,
+        "score": 0.03125763125763126,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.6769867467787186,
+          "bm25": 11.004937388217682
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 13.623199425637722
+  },
+  {
+    "query_id": "D05",
+    "split": "dev",
+    "question": "How can I iterate over a sequence's distinct elements in sorted order?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "8bab1ea7c0c52aa61a74a4bb57da351d",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "8bab1ea7c0c52aa61a74a4bb57da351d",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u006",
+        "text": ">>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n>>> for i in sorted(basket):\n...     print(i)\n...\napple\napple\nbanana\norange\norange\npear\n\nUsing set() on a sequence eliminates duplicate elements. The use of sorted() in combination with set() over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order.\n\n>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']\n>>> for f in sorted(set(basket)):\n...     print(f)\n...\napple\nbanana\norange\npear\n\nIt is sometimes tempting to change a list while you are looping over it;\nhowever, it is often simpler and safer to create a new list instead.\n\n>>> import math\n>>> raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('NaN'), 47.8]\n>>> filtered_data = []\n>>> for value in raw_data:\n...     if not math.isnan(value):\n...         filtered_data.append(value)\n...\n>>> filtered_data\n[56.2, 51.7, 55.3, 52.5, 47.8]\n\n5.7. More on Conditions\n\n",
+        "start": 0,
+        "end": 948,
+        "source_start": 18528,
+        "source_end": 19476,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7805225409492922,
+          "bm25": 25.2841990029672
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "5b353fd4dbba4affd941c23610bfc01e",
+        "source_id": "tutorial_datastructures",
+        "chunk_id": "5b353fd4dbba4affd941c23610bfc01e",
+        "document_id": "tutorial_datastructures",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page": "tutorial_datastructures:u005",
+        "text": "To loop over two or more sequences at the same time, the entries can be paired\nwith the zip() function.\n\n>>> questions = ['name', 'quest', 'favorite color']\n>>> answers = ['lancelot', 'the holy grail', 'blue']\n>>> for q, a in zip(questions, answers):\n...     print('What is your {0}?  It is {1}.'.format(q, a))\n...\nWhat is your name?  It is lancelot.\nWhat is your quest?  It is the holy grail.\nWhat is your favorite color?  It is blue.\n\nTo loop over a sequence in reverse, first specify the sequence in a forward\ndirection and then call the reversed() function.\n\n>>> for i in reversed(range(1, 10, 2)):\n...     print(i)\n...\n9\n7\n5\n3\n1\n\nTo loop over a sequence in sorted order, use the sorted() function which\nreturns a new sorted list while leaving the source unaltered.",
+        "start": 2786,
+        "end": 3555,
+        "source_start": 17757,
+        "source_end": 18526,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "5. Data Structures"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "5. Data Structures",
+        "rank": 2,
+        "score": 0.03225806451612903,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.7687138811978192,
+          "bm25": 22.118158981051938
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "a18ed2256f42fe56b5565cc4e730a7c5",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "a18ed2256f42fe56b5565cc4e730a7c5",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u001",
+        "text": "To iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\nIn most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques .\n\nA strange thing happens if you just print a range:\n\n>>> range(10)\nrange(0, 10)\n\nIn many ways the object returned by range() behaves as if it is a list,\nbut in fact it isn’t. It is an object which returns the successive items of\nthe desired sequence when you iterate over it, but it doesn’t really make\nthe list, thus saving space.\n\nWe say such an object is iterable , that is, suitable as a target for\nfunctions and constructs that expect something from which they can\nobtain successive items until the supply is exhausted.  We have seen that\nthe for statement is such a construct, while an example of a function\nthat takes an iterable is sum() :",
+        "start": 2827,
+        "end": 3804,
+        "source_start": 2827,
+        "source_end": 3804,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 3,
+        "score": 0.031746031746031744,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7445097453452334,
+          "bm25": 18.687556677747224
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 15.296099707484245
+  },
+  {
+    "query_id": "D06",
+    "split": "dev",
+    "question": "According to the tutorial, why can a list used as a default argument keep values between function calls?",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "15b9c322f7abc24e9275fb160bc9bceb",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "15b9c322f7abc24e9275fb160bc9bceb",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u006",
+        "text": "giving one of the optional arguments: ask_ok('OK to overwrite the file?', 2)\n\nor even giving all arguments: ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')\n\nThis example also introduces the in keyword. This tests whether or\nnot a sequence contains a certain value.\n\nThe default values are evaluated at the point of function definition in the defining scope, so that\n\ni = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()\n\nwill print 5 .\n\nImportant warning: The default value is evaluated only once. This makes a\ndifference when the default is a mutable object such as a list, dictionary, or\ninstances of most classes.  For example, the following function accumulates the\narguments passed to it on subsequent calls:\n\ndef f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))\n\nThis will print\n\n[1]\n[1, 2]\n[1, 2, 3]\n\nIf you don’t want the default to be shared between subsequent calls, you can\nwrite the function like this instead:\n\n",
+        "start": 0,
+        "end": 966,
+        "source_start": 18779,
+        "source_end": 19745,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7966207625779294,
+          "bm25": 16.348182513220863
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "23d38c766c110fa88fd1ffef5565166c",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "23d38c766c110fa88fd1ffef5565166c",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u005",
+        "text": "It is also possible to define functions with a variable number of arguments.\nThere are three forms, which can be combined.\n\n4.9.1. Default Argument Values\n\nThe most useful form is to specify a default value for one or more arguments.\nThis creates a function that can be called with fewer arguments than it is\ndefined to allow.  For example:\n\ndef ask_ok(prompt, retries=4, reminder='Please try again!'):\n    while True:\n        reply = input(prompt)\n        if reply in {'y', 'ye', 'yes'}:\n            return True\n        if reply in {'n', 'no', 'nop', 'nope'}:\n            return False\n        retries = retries - 1\n        if retries < 0:\n            raise ValueError('invalid user response')\n        print(reminder)\n\nThis function can be called in several ways:\n\ngiving only the mandatory argument: ask_ok('Do you really want to quit?')",
+        "start": 2719,
+        "end": 3557,
+        "source_start": 17939,
+        "source_end": 18777,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 2,
+        "score": 0.031754032258064516,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 4
+        },
+        "branch_scores": {
+          "dense": 0.7885071787411702,
+          "bm25": 11.553914075011608
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "738f83c3ed130741dbd06adaaecddb57",
+        "source_id": "tutorial_classes",
+        "chunk_id": "738f83c3ed130741dbd06adaaecddb57",
+        "document_id": "tutorial_classes",
+        "source": "https://docs.python.org/3.13/tutorial/classes.html",
+        "page": "tutorial_classes:u005",
+        "text": "Actually, you may have guessed the answer: the special thing about methods is\nthat the instance object is passed as the first argument of the function.  In our\nexample, the call x.f() is exactly equivalent to MyClass.f(x) .  In\ngeneral, calling a method with a list of n arguments is equivalent to calling\nthe corresponding function with an argument list that is created by inserting\nthe method’s instance object before the first argument.\n\nIn general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance’s class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\n9.3.5. Class and Instance Variables\n\n",
+        "start": 0,
+        "end": 977,
+        "source_start": 15248,
+        "source_end": 16225,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "9. Classes"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "9. Classes",
+        "rank": 3,
+        "score": 0.03057889822595705,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 8
+        },
+        "branch_scores": {
+          "dense": 0.7786539328838037,
+          "bm25": 10.451204618333643
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 20.39480023086071
+  },
+  {
+    "query_id": "D07",
+    "split": "dev",
+    "question": "Does range include its specified end point?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "9398a4c70ce1ead86a18c3babd8f0a1f",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "9398a4c70ce1ead86a18c3babd8f0a1f",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u001",
+        "text": "# Strategy:  Iterate over a copy\nfor user, status in users.copy().items():\n    if status == 'inactive':\n        del users[user]\n\n# Strategy:  Create a new collection\nactive_users = {}\nfor user, status in users.items():\n    if status == 'active':\n        active_users[user] = status\n\n4.3. The range() Function\n\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy.  It generates arithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates\n10 values, the legal indices for items of a sequence of length 10.  It\nis possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\n",
+        "start": 1896,
+        "end": 2827,
+        "source_start": 1896,
+        "source_end": 2827,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.6869824374962121,
+          "bm25": 10.263717013613244
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "cd998382ff3dc049a22c9e6b858b5baa",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "cd998382ff3dc049a22c9e6b858b5baa",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u003",
+        "text": "Point(1, var)\nPoint(1, y=var)\nPoint(x=1, y=var)\nPoint(y=var, x=1)\n\nA recommended way to read patterns is to look at them as an extended form of what you\nwould put on the left of an assignment, to understand which variables would be set to\nwhat.\nOnly the standalone names (like var above) are assigned to by a match statement.\nDotted names (like foo.bar ), attribute names (the x= and y= above) or class names\n(recognized by the “(…)” next to them like Point above) are never assigned to.\n\nPatterns can be arbitrarily nested.  For example, if we have a short\nlist of Points, with __match_args__ added, we could match it like this:\n\nclass Point:\n    __match_args__ = ('x', 'y')\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y",
+        "start": 2783,
+        "end": 3526,
+        "source_start": 10351,
+        "source_end": 11094,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 2,
+        "score": 0.030158730158730156,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 10
+        },
+        "branch_scores": {
+          "dense": 0.6645731206653449,
+          "bm25": 6.228265900825687
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "d755e9922b9d3d4efbf463f73448b7e9",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "d755e9922b9d3d4efbf463f73448b7e9",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u004",
+        "text": "match points:\n    case []:\n        print(\"No points\")\n    case [Point(0, 0)]:\n        print(\"The origin\")\n    case [Point(x, y)]:\n        print(f\"Single point {x}, {y}\")\n    case [Point(0, y1), Point(0, y2)]:\n        print(f\"Two on the Y axis at {y1}, {y2}\")\n    case _:\n        print(\"Something else\")\n\nWe can add an if clause to a pattern, known as a “guard”.  If the\nguard is false, match goes on to try the next case block.  Note\nthat value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:\n\nLike unpacking assignments, tuple and list patterns have exactly the\nsame meaning and actually match arbitrary sequences.  An important\nexception is that they don’t match iterators or strings.\n\n",
+        "start": 0,
+        "end": 869,
+        "source_start": 11096,
+        "source_end": 11965,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 3,
+        "score": 0.029418126757516764,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 9,
+          "bm25": 7
+        },
+        "branch_scores": {
+          "dense": 0.6467188756340988,
+          "bm25": 6.514330507503954
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 10.460500605404377
+  },
+  {
+    "query_id": "D08",
+    "split": "dev",
+    "question": "When does the else clause of a for or while loop execute in relation to break?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "a1bdcf9cd2820603003cfd0d6358b070",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "a1bdcf9cd2820603003cfd0d6358b070",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u002",
+        "text": "In a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break , the else clause executes.\n\nIn a for loop, the else clause is executed\nafter the loop finishes its final iteration, that is, if no break occurred.\n\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\nIn either kind of loop, the else clause is not executed if the\nloop was terminated by a break .  Of course, other ways of ending the\nloop early, such as a return or a raised exception, will also skip\nexecution of the else clause.\n\nThis is exemplified in the following for loop,\nwhich searches for prime numbers:\n\n",
+        "start": 983,
+        "end": 1647,
+        "source_start": 4789,
+        "source_end": 5453,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.9060157684822236,
+          "bm25": 32.51167187558761
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "4073a8ff5a9c8159aa93b7c256fae23a",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "4073a8ff5a9c8159aa93b7c256fae23a",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u002",
+        "text": "When used with a loop, the else clause has more in common with the else clause of a try statement than it does with that of if statements: a try statement’s else clause runs when no exception\noccurs, and a loop’s else clause runs when no break occurs. For more on\nthe try statement and exceptions, see Handling Exceptions .\n\n4.6. pass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example:\n\n>>> while True:\n...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or\nconditional body when you are working on new code, allowing you to keep thinking\nat a more abstract level.  The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...\n\n",
+        "start": 2517,
+        "end": 3462,
+        "source_start": 6323,
+        "source_end": 7268,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 2,
+        "score": 0.03225806451612903,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.7593299392026599,
+          "bm25": 28.782079514701117
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "65b2965a968fc8c72e58062e789b1d57",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "65b2965a968fc8c72e58062e789b1d57",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u002",
+        "text": ">>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n(Yes, this is the correct code.  Look closely: the else clause belongs to\nthe for loop, not the if statement.)\n\nOne way to think of the else clause is to imagine it paired with the if inside the loop.  As the loop executes, it will run a sequence like\nif/if/if/else. The if is inside the loop, encountered a number of times. If\nthe condition is ever true, a break will happen. If the condition is never\ntrue, the else clause outside the loop will execute.\n\n",
+        "start": 1647,
+        "end": 2517,
+        "source_start": 5453,
+        "source_end": 6323,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 3,
+        "score": 0.031746031746031744,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7439175971589642,
+          "bm25": 27.283315090823805
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 11.976500041782856
+  },
+  {
+    "query_id": "D09",
+    "split": "dev",
+    "question": "When a module file is executed as a script, what value is assigned to __name__?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "9297e3442b958fee11da98d78be0a1d5",
+        "source_id": "tutorial_modules",
+        "chunk_id": "9297e3442b958fee11da98d78be0a1d5",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u001",
+        "text": "This does not add the names of the functions defined in fibo directly to\nthe current namespace (see Python Scopes and Namespaces for more details);\nit only adds the module name fibo there. Using\nthe module name you can access the functions:\n\n>>> fibo.fib(1000)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987\n>>> fibo.fib2(100)\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n>>> fibo.__name__\n'fibo'\n\nIf you intend to use a function often you can assign it to a local name:\n\n>>> fib = fibo.fib\n>>> fib(500)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\n6.1. More on Modules\n\nA module can contain executable statements as well as function definitions.\nThese statements are intended to initialize the module. They are executed only\nthe first time the module name is encountered in an import statement. [ 1 ] (They are also run if the file is executed as a script.)\n\n",
+        "start": 1788,
+        "end": 2644,
+        "source_start": 1788,
+        "source_end": 2644,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 1,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7623536714880168,
+          "bm25": 15.04908185061167
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "78f7c929568bf0db03728e719ca4fc66",
+        "source_id": "tutorial_modules",
+        "chunk_id": "78f7c929568bf0db03728e719ca4fc66",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u002",
+        "text": "if __name__ == \"__main__\":\n    import sys\n    fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable module,\nbecause the code that parses the command line only runs if the module is\nexecuted as the “main” file:\n\n$ python fibo.py 50\n0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run:\n\n>>> import fibo\n>>>\n\nThis is often used either to provide a convenient user interface to a module, or\nfor testing purposes (running the module as a script executes a test suite).\n\n6.1.2. The Module Search Path\n\nWhen a module named spam is imported, the interpreter first searches for\na built-in module with that name. These module names are listed in sys.builtin_module_names . If not found, it then searches for a file\nnamed spam.py in a list of directories given by the variable sys.path . sys.path is initialized from these locations:\n\nThe directory containing the input script (or the current directory when no\nfile is specified).\n\n",
+        "start": 1901,
+        "end": 2876,
+        "source_start": 5420,
+        "source_end": 6395,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 2,
+        "score": 0.03177805800756621,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7390464095504885,
+          "bm25": 19.396796490359517
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "2fd35b166d60982cc90acae642f4b3cd",
+        "source_id": "tutorial_modules",
+        "chunk_id": "2fd35b166d60982cc90acae642f4b3cd",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u001",
+        "text": "A module is a file containing Python definitions and statements.  The file name\nis the module name with the suffix .py appended.  Within a module, the\nmodule’s name (as a string) is available as the value of the global variable __name__ .  For instance, use your favorite text editor to create a file\ncalled fibo.py in the current directory with the following contents:\n\n# Fibonacci numbers module\n\ndef fib(n):\n    \"\"\"Write Fibonacci series up to n.\"\"\"\n    a, b = 0, 1\n    while a < n:\n        print(a, end=' ')\n        a, b = b, a+b\n    print()\n\ndef fib2(n):\n    \"\"\"Return Fibonacci series up to n.\"\"\"\n    result = []\n    a, b = 0, 1\n    while a < n:\n        result.append(a)\n        a, b = b, a+b\n    return result\n\nNow enter the Python interpreter and import this module with the following\ncommand:\n\n>>> import fibo\n\n",
+        "start": 968,
+        "end": 1788,
+        "source_start": 968,
+        "source_end": 1788,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 3,
+        "score": 0.031544957774465976,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 6
+        },
+        "branch_scores": {
+          "dense": 0.7968291097163344,
+          "bm25": 11.124284017859482
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": false,
+    "hit3": false,
+    "elapsed_ms": 15.465299598872662
+  },
+  {
+    "query_id": "D10",
+    "split": "dev",
+    "question": "What names does from module import * exclude, and why is this generally discouraged?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "47ea2ffe7b5a8aa74aac712c30bd91ad",
+        "source_id": "tutorial_modules",
+        "chunk_id": "47ea2ffe7b5a8aa74aac712c30bd91ad",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u002",
+        "text": ">>> from fibo import fib, fib2\n>>> fib(500)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nThis does not introduce the module name from which the imports are taken in the\nlocal namespace (so in the example, fibo is not defined).\n\nThere is even a variant to import all names that a module defines:\n\n>>> from fibo import *\n>>> fib(500)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\nThis imports all names except those beginning with an underscore ( _ ).\nIn most cases Python programmers do not use this facility since it introduces\nan unknown set of names into the interpreter, possibly hiding some things\nyou have already defined.\n\nNote that in general the practice of importing * from a module or package is\nfrowned upon, since it often causes poorly readable code. However, it is okay to\nuse it to save typing in interactive sessions.\n\nIf the module name is followed by as , then the name\nfollowing as is bound directly to the imported module.\n\n",
+        "start": 0,
+        "end": 937,
+        "source_start": 3519,
+        "source_end": 4456,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 1,
+        "score": 0.032266458495966696,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7592747928695446,
+          "bm25": 13.26932383115075
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "11679969e252d89b4eea6ab5f665d30a",
+        "source_id": "tutorial_modules",
+        "chunk_id": "11679969e252d89b4eea6ab5f665d30a",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u006",
+        "text": "If __all__ is not defined, the statement from sound.effects import * does not import all submodules from the package sound.effects into the\ncurrent namespace; it only ensures that the package sound.effects has\nbeen imported (possibly running any initialization code in __init__.py )\nand then imports whatever names are defined in the package.  This includes any\nnames defined (and submodules explicitly loaded) by __init__.py .  It\nalso includes any submodules of the package that were explicitly loaded by\nprevious import statements.  Consider this code:\n\nimport sound.effects.echo\nimport sound.effects.surround\nfrom sound.effects import *\n\nIn this example, the echo and surround modules are imported in the\ncurrent namespace because they are defined in the sound.effects package\nwhen the from...import statement is executed.  (This also works when __all__ is defined.)\n\n",
+        "start": 2096,
+        "end": 2968,
+        "source_start": 20671,
+        "source_end": 21543,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 2,
+        "score": 0.031754032258064516,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 4,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.7584291461155301,
+          "bm25": 12.782091845095671
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "c718e2adaadfb3483f965838a8c252ee",
+        "source_id": "tutorial_modules",
+        "chunk_id": "c718e2adaadfb3483f965838a8c252ee",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u006",
+        "text": "You can also write relative imports, with the from module import name form\nof import statement.  These imports use leading dots to indicate the current and\nparent packages involved in the relative import.  From the surround module for example, you might use:\n\nfrom . import echo\nfrom .. import formats\nfrom ..filters import equalizer\n\nNote that relative imports are based on the name of the current module’s package.\nSince the main module does not have a package, modules intended for use\nas the main module of a Python application must always use absolute imports.\n\nFootnotes\n\nIn fact function definitions are also ‘statements’ that are ‘executed’; the\nexecution of a module-level function definition adds the function name to\nthe module’s global namespace.",
+        "start": 3713,
+        "end": 4471,
+        "source_start": 22288,
+        "source_end": 23046,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 3,
+        "score": 0.031754032258064516,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 4
+        },
+        "branch_scores": {
+          "dense": 0.7673144450056598,
+          "bm25": 11.295598622883562
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 14.84530046582222
+  },
+  {
+    "query_id": "D11",
+    "split": "dev",
+    "question": "Where does Python cache a module's compiled code to speed loading?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "e751762efbb5e171a523f4fcf15a82bb",
+        "source_id": "tutorial_modules",
+        "chunk_id": "e751762efbb5e171a523f4fcf15a82bb",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u003",
+        "text": "6.1.3. “Compiled” Python files\n\nTo speed up loading modules, Python caches the compiled version of each module\nin the __pycache__ directory under the name module. version .pyc ,\nwhere the version encodes the format of the compiled file; it generally contains\nthe Python version number.  For example, in CPython release 3.3 the compiled\nversion of spam.py would be cached as __pycache__/spam.cpython-33.pyc .  This\nnaming convention allows compiled modules from different releases and different\nversions of Python to coexist.\n\nPython checks the modification date of the source against the compiled version\nto see if it’s out of date and needs to be recompiled.  This is a completely\nautomatic process.  Also, the compiled modules are platform-independent, so the\nsame library can be shared among systems with different architectures.\n\n",
+        "start": 0,
+        "end": 834,
+        "source_start": 7321,
+        "source_end": 8155,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.8769210470745268,
+          "bm25": 27.615208032589685
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "38927a04d94c349d645564baa1b09f0f",
+        "source_id": "tutorial_modules",
+        "chunk_id": "38927a04d94c349d645564baa1b09f0f",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u003",
+        "text": "Python does not check the cache in two circumstances.  First, it always\nrecompiles and does not store the result for the module that’s loaded directly\nfrom the command line.  Second, it does not check the cache if there is no\nsource module.  To support a non-source (compiled only) distribution, the\ncompiled module must be in the source directory, and there must not be a source\nmodule.\n\nSome tips for experts:\n\nYou can use the -O or -OO switches on the Python command\nto reduce the size of a compiled module.  The -O switch removes assert\nstatements, the -OO switch removes both assert statements and __doc__\nstrings.  Since some programs may rely on having these available, you should\nonly use this option if you know what you’re doing.  “Optimized” modules have\nan opt- tag and are usually smaller.  Future releases may\nchange the effects of optimization.\n\n",
+        "start": 834,
+        "end": 1695,
+        "source_start": 8155,
+        "source_end": 9016,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 2,
+        "score": 0.03225806451612903,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.8234640071955541,
+          "bm25": 24.125015362690718
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "8fa4b05ca797b41642079d80096fea90",
+        "source_id": "tutorial_modules",
+        "chunk_id": "8fa4b05ca797b41642079d80096fea90",
+        "document_id": "tutorial_modules",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page": "tutorial_modules:u003",
+        "text": "A program doesn’t run any faster when it is read from a .pyc file than when it is read from a .py file; the only thing that’s faster\nabout .pyc files is the speed with which they are loaded.\n\nThe module compileall can create .pyc files for all modules in a\ndirectory.\n\nThere is more detail on this process, including a flow chart of the\ndecisions, in PEP 3147 .\n\n6.2. Standard Modules\n\n",
+        "start": 1695,
+        "end": 2081,
+        "source_start": 9016,
+        "source_end": 9402,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "6. Modules"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "6. Modules",
+        "rank": 3,
+        "score": 0.03125763125763126,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 5
+        },
+        "branch_scores": {
+          "dense": 0.7837305405275233,
+          "bm25": 9.252385766769184
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 14.131300151348114
+  },
+  {
+    "query_id": "D12",
+    "split": "dev",
+    "question": "In the tutorial's file handling guidance, what encoding is recommended for text files unless another is needed?",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "e9aa07cf76158381a94524b5fb268db0",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "e9aa07cf76158381a94524b5fb268db0",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u003",
+        "text": "Normally, files are opened in text mode , that means, you read and write\nstrings from and to the file, which are encoded in a specific encoding .\nIf encoding is not specified, the default is platform dependent\n(see open() ).\nBecause UTF-8 is the modern de-facto standard, encoding=\"utf-8\" is\nrecommended unless you know that you need to use a different encoding.\nAppending a 'b' to the mode opens the file in binary mode .\nBinary mode data is read and written as bytes objects.\nYou can not specify encoding when opening file in binary mode.",
+        "start": 3364,
+        "end": 3904,
+        "source_start": 10555,
+        "source_end": 11095,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.7654716983637188,
+          "bm25": 23.45426160882804
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "8056c2dbb2b3fa00da8c1e3d516fe4f9",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "8056c2dbb2b3fa00da8c1e3d516fe4f9",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u004",
+        "text": "In text mode, the default when reading is to convert platform-specific line\nendings ( \\n on Unix, \\r\\n on Windows) to just \\n .  When writing in\ntext mode, the default is to convert occurrences of \\n back to\nplatform-specific line endings.  This behind-the-scenes modification\nto file data is fine for text files, but will corrupt binary data like that in JPEG or EXE files.  Be very careful to use binary mode when\nreading and writing such files.\n\nIt is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.  Using with is also much shorter than writing\nequivalent try - finally blocks:\n\n>>> with open('workfile', encoding=\"utf-8\") as f:\n...     read_data = f.read()\n\n>>> # We can check that the file has been automatically closed.\n>>> f.closed\nTrue\n\n",
+        "start": 0,
+        "end": 891,
+        "source_start": 11097,
+        "source_end": 11988,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7339040928510816,
+          "bm25": 14.251662756258508
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "961e45cbf11cdc6767179f9e3390cd15",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "961e45cbf11cdc6767179f9e3390cd15",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u005",
+        "text": "Another variant of the dumps() function, called dump() ,\nsimply serializes the object to a text file .  So if f is a text file object opened for writing, we can do this:\n\njson.dump(x, f)\n\nTo decode the object again, if f is a binary file or text file object which has been opened for reading:\n\nx = json.load(f)\n\nNote\n\nJSON files must be encoded in UTF-8. Use encoding=\"utf-8\" when opening\nJSON file as a text file for both of reading and writing.\n\nThis simple serialization technique can handle lists and dictionaries, but\nserializing arbitrary class instances in JSON requires a bit of extra effort.\nThe reference for the json module contains an explanation of this.\n\nSee also\n\npickle - the pickle module\n\n",
+        "start": 2790,
+        "end": 3497,
+        "source_start": 17409,
+        "source_end": 18116,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 3,
+        "score": 0.0315136476426799,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.6809214477768519,
+          "bm25": 16.793983164211856
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 23.972700349986553
+  },
+  {
+    "query_id": "D13",
+    "split": "dev",
+    "question": "Why should I use with when working with a file, even if the block may raise an exception?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "8056c2dbb2b3fa00da8c1e3d516fe4f9",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "8056c2dbb2b3fa00da8c1e3d516fe4f9",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u004",
+        "text": "In text mode, the default when reading is to convert platform-specific line\nendings ( \\n on Unix, \\r\\n on Windows) to just \\n .  When writing in\ntext mode, the default is to convert occurrences of \\n back to\nplatform-specific line endings.  This behind-the-scenes modification\nto file data is fine for text files, but will corrupt binary data like that in JPEG or EXE files.  Be very careful to use binary mode when\nreading and writing such files.\n\nIt is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.  Using with is also much shorter than writing\nequivalent try - finally blocks:\n\n>>> with open('workfile', encoding=\"utf-8\") as f:\n...     read_data = f.read()\n\n>>> # We can check that the file has been automatically closed.\n>>> f.closed\nTrue\n\n",
+        "start": 0,
+        "end": 891,
+        "source_start": 11097,
+        "source_end": 11988,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 1,
+        "score": 0.032018442622950824,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 4
+        },
+        "branch_scores": {
+          "dense": 0.7797425139283112,
+          "bm25": 13.566021612172689
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "95ebcc1c6c63b03f2ab3c568278ff641",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "95ebcc1c6c63b03f2ab3c568278ff641",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u004",
+        "text": "If you’re not using the with keyword, then you should call f.close() to close the file and immediately free up any system\nresources used by it.\n\nWarning\n\nCalling f.write() without using the with keyword or calling f.close() might result in the arguments\nof f.write() not being completely written to the disk, even if the\nprogram exits successfully.\n\nAfter a file object is closed, either by a with statement\nor by calling f.close() , attempts to use the file object will\nautomatically fail.\n\n>>> f.close()\n>>> f.read()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nValueError: I/O operation on closed file.\n\n7.2.1. Methods of File Objects\n\nThe rest of the examples in this section will assume that a file object called f has already been created.\n\n",
+        "start": 891,
+        "end": 1666,
+        "source_start": 11988,
+        "source_end": 12763,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.7473202377353574,
+          "bm25": 13.810246225691486
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "3e8bad97f842f7f8ae9d484d833779cf",
+        "source_id": "tutorial_errors",
+        "chunk_id": "3e8bad97f842f7f8ae9d484d833779cf",
+        "document_id": "tutorial_errors",
+        "source": "https://docs.python.org/3.13/tutorial/errors.html",
+        "page": "tutorial_errors:u006",
+        "text": ">>> try:\n...     raise TypeError('bad type')\n... except Exception as e:\n...     e.add_note('Add some information')\n...     e.add_note('Add some more information')\n...     raise\n...\nTraceback (most recent call last):\n  File \"<stdin>\", line 2, in <module>\n    raise TypeError('bad type')\nTypeError: bad type\nAdd some information\nAdd some more information\n>>>\n\nFor example, when collecting exceptions into an exception group, we may want\nto add context information for the individual errors. In the following each\nexception in the group has a note indicating when this error has occurred.\n\n",
+        "start": 934,
+        "end": 1521,
+        "source_start": 19610,
+        "source_end": 20197,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "8. Errors and Exceptions"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "8. Errors and Exceptions",
+        "rank": 3,
+        "score": 0.030798389007344232,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 7,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.698925076203493,
+          "bm25": 13.757324610426064
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 16.584900207817554
+  },
+  {
+    "query_id": "D14",
+    "split": "dev",
+    "question": "What is the name for converting a Python data hierarchy into a JSON string, and the reverse operation?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "49993829c0638e3becf48631d03893bc",
+        "source_id": "tutorial_inputoutput",
+        "chunk_id": "49993829c0638e3becf48631d03893bc",
+        "document_id": "tutorial_inputoutput",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page": "tutorial_inputoutput:u005",
+        "text": "Rather than having users constantly writing and debugging code to save\ncomplicated data types to files, Python allows you to use the popular data\ninterchange format called JSON (JavaScript Object Notation) .  The standard module called json can take Python\ndata hierarchies, and convert them to string representations; this process is\ncalled serializing .  Reconstructing the data from the string representation\nis called deserializing .  Between serializing and deserializing, the\nstring representing the object may have been stored in a file or data, or\nsent over a network connection to some distant machine.\n\nNote\n\nThe JSON format is commonly used by modern applications to allow for data\nexchange.  Many programmers are already familiar with it, which makes\nit a good choice for interoperability.\n\nIf you have an object x , you can view its JSON string representation with a\nsimple line of code:\n\n>>> import json\n>>> x = [1, 'simple', 'list']\n>>> json.dumps(x)\n'[1, \"simple\", \"list\"]'\n\n",
+        "start": 1799,
+        "end": 2790,
+        "source_start": 16418,
+        "source_end": 17409,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "7. Input and Output"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "7. Input and Output",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.8070777385177023,
+          "bm25": 14.67520648299897
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "b5005503cf31f326cea566634baea461",
+        "source_id": "library_json",
+        "chunk_id": "b5005503cf31f326cea566634baea461",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u001",
+        "text": "json — JSON encoder and decoder\n\nSource code: Lib/json/__init__.py\n\nJSON (JavaScript Object Notation) , specified by RFC 7159 (which obsoletes RFC 4627 ) and by ECMA-404 ,\nis a lightweight data interchange format inspired by JavaScript object literal syntax\n(although it is not a strict subset of JavaScript [ 1 ] ).\n\nNote\n\nThe term “object” in the context of JSON processing in Python can be\nambiguous. All values in Python are objects. In JSON, an object refers to\nany data wrapped in curly braces, similar to a Python dictionary.\n\nWarning\n\nBe cautious when parsing JSON data from untrusted sources. A malicious\nJSON string may cause the decoder to consume considerable CPU and memory\nresources. Limiting the size of data to be parsed is recommended.\n\nThis module exposes an API familiar to users of the standard library marshal and pickle modules.\n\nEncoding basic Python object hierarchies:\n\n",
+        "start": 0,
+        "end": 895,
+        "source_start": 0,
+        "source_end": 895,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7637196651103655,
+          "bm25": 13.401895317391695
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "47b0658282207fc4445413e2211cd664",
+        "source_id": "library_json",
+        "chunk_id": "47b0658282207fc4445413e2211cd664",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u004",
+        "text": "This can be used to decode a JSON document from a string that may have\nextraneous data at the end.\n\nclass json. JSONEncoder ( * , skipkeys = False , ensure_ascii = True , check_circular = True , allow_nan = True , sort_keys = False , indent = None , separators = None , default = None )\n\nExtensible JSON encoder for Python data structures.\n\nSupports the following objects and types by default:\n\nPython\n\nJSON\n\ndict\n\nobject\n\nlist, tuple\n\narray\n\nstr\n\nstring\n\nint, float, int- & float-derived Enums\n\nnumber\n\nTrue\n\ntrue\n\nFalse\n\nfalse\n\nNone\n\nnull\n\nChanged in version 3.4: Added support for int- and float-derived Enum classes.\n\nTo extend this to recognize other objects, subclass and implement a default() method with another method that returns a serializable object\nfor o if possible, otherwise it should call the superclass implementation\n(to raise TypeError ).",
+        "start": 2823,
+        "end": 3681,
+        "source_start": 13582,
+        "source_end": 14440,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 3,
+        "score": 0.03149801587301587,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 4
+        },
+        "branch_scores": {
+          "dense": 0.7568651621444792,
+          "bm25": 12.899480529455357
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 16.804000362753868
+  },
+  {
+    "query_id": "D15",
+    "split": "dev",
+    "question": "Why put success-only code in try/except's else clause rather than inside try?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": true,
+    "status": "ok",
+    "results": [
+      {
+        "id": "8b21719b431bfc2979a2044097bd4999",
+        "source_id": "tutorial_errors",
+        "chunk_id": "8b21719b431bfc2979a2044097bd4999",
+        "document_id": "tutorial_errors",
+        "source": "https://docs.python.org/3.13/tutorial/errors.html",
+        "page": "tutorial_errors:u003",
+        "text": "try:\n    f = open('myfile.txt')\n    s = f.readline()\n    i = int(s.strip())\nexcept OSError as err:\n    print(\"OS error:\", err)\nexcept ValueError:\n    print(\"Could not convert data to an integer.\")\nexcept Exception as err:\n    print(f\"Unexpected {err=}, {type(err)=}\")\n    raise\n\nThe try … except statement has an optional else\nclause , which, when present, must follow all except clauses .  It is useful\nfor code that must be executed if the try clause does not raise an exception.\nFor example:\n\nfor arg in sys.argv[1:]:\n    try:\n        f = open(arg, 'r')\n    except OSError:\n        print('cannot open', arg)\n    else:\n        print(arg, 'has', len(f.readlines()), 'lines')\n        f.close()\n\nThe use of the else clause is better than adding additional code to\nthe try clause because it avoids accidentally catching an exception\nthat wasn’t raised by the code being protected by the try … except statement.\n\n",
+        "start": 0,
+        "end": 910,
+        "source_start": 7094,
+        "source_end": 8004,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "8. Errors and Exceptions"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "8. Errors and Exceptions",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.8420186292406986,
+          "bm25": 26.91269012998697
+        },
+        "rrf_k": 60,
+        "evidence_hit": true
+      },
+      {
+        "id": "4073a8ff5a9c8159aa93b7c256fae23a",
+        "source_id": "tutorial_controlflow",
+        "chunk_id": "4073a8ff5a9c8159aa93b7c256fae23a",
+        "document_id": "tutorial_controlflow",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page": "tutorial_controlflow:u002",
+        "text": "When used with a loop, the else clause has more in common with the else clause of a try statement than it does with that of if statements: a try statement’s else clause runs when no exception\noccurs, and a loop’s else clause runs when no break occurs. For more on\nthe try statement and exceptions, see Handling Exceptions .\n\n4.6. pass Statements\n\nThe pass statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For example:\n\n>>> while True:\n...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or\nconditional body when you are working on new code, allowing you to keep thinking\nat a more abstract level.  The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...\n\n",
+        "start": 2517,
+        "end": 3462,
+        "source_start": 6323,
+        "source_end": 7268,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "4. More Control Flow Tools"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "4. More Control Flow Tools",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.7744900142983727,
+          "bm25": 20.103918362732355
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "02c292167f607bcbb8a5a4c6804d7069",
+        "source_id": "tutorial_errors",
+        "chunk_id": "02c292167f607bcbb8a5a4c6804d7069",
+        "document_id": "tutorial_errors",
+        "source": "https://docs.python.org/3.13/tutorial/errors.html",
+        "page": "tutorial_errors:u002",
+        "text": "If an exception occurs during execution of the try clause, the rest of the\nclause is skipped.  Then, if its type matches the exception named after the except keyword, the except clause is executed, and then execution\ncontinues after the try/except block.\n\nIf an exception occurs which does not match the exception named in the except\nclause , it is passed on to outer try statements; if no handler is\nfound, it is an unhandled exception and execution stops with an error message.\n\nA try statement may have more than one except clause , to specify\nhandlers for different exceptions.  At most one handler will be executed.\nHandlers only handle exceptions that occur in the corresponding try clause ,\nnot in other handlers of the same try statement.  An except clause may name multiple exceptions as a parenthesized tuple, for example:\n\n... except (RuntimeError, TypeError, NameError):\n...     pass\n\n",
+        "start": 0,
+        "end": 897,
+        "source_start": 3590,
+        "source_end": 4487,
+        "metadata": {
+          "document_type": "tutorial",
+          "version": "3.13",
+          "language": "en",
+          "title": "8. Errors and Exceptions"
+        },
+        "document_type": "tutorial",
+        "version": "3.13",
+        "language": "en",
+        "title": "8. Errors and Exceptions",
+        "rank": 3,
+        "score": 0.03125763125763126,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.7600794301684468,
+          "bm25": 18.77505217589258
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": true,
+    "hit3": true,
+    "elapsed_ms": 13.393400236964226
+  },
+  {
+    "query_id": "DU01",
+    "split": "dev",
+    "question": "What measured throughput in MB/s does json.dumps achieve on a Ryzen 7 7800X3D in the benchmark supplied with this corpus?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": false,
+    "status": "ok",
+    "results": [
+      {
+        "id": "179f653d550e60385e5543d0814707f9",
+        "source_id": "library_json",
+        "chunk_id": "179f653d550e60385e5543d0814707f9",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u001",
+        "text": ">>> import json\n>>> json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])\n'[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'\n>>> print(json.dumps(\"\\\"foo\\bar\"))\n\"\\\"foo\\bar\"\n>>> print(json.dumps('\\u1234'))\n\"\\u1234\"\n>>> print(json.dumps('\\\\'))\n\"\\\\\"\n>>> print(json.dumps({\"c\": 0, \"b\": 0, \"a\": 0}, sort_keys=True))\n{\"a\": 0, \"b\": 0, \"c\": 0}\n>>> from io import StringIO\n>>> io = StringIO()\n>>> json.dump(['streaming API'], io)\n>>> io.getvalue()\n'[\"streaming API\"]'\n\nCompact encoding:\n\n>>> import json\n>>> json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))\n'[1,2,3,{\"4\":5,\"6\":7}]'\n\nPretty printing:\n\n>>> import json\n>>> print(json.dumps({'6': 7, '4': 5}, sort_keys=True, indent=4))\n{\n    \"4\": 5,\n    \"6\": 7\n}\n\nCustomizing JSON object encoding:\n\n",
+        "start": 895,
+        "end": 1633,
+        "source_start": 895,
+        "source_end": 1633,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.6799963232640551,
+          "bm25": 17.181108183070634
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "2889c792d97a39328f00c5d46cd1d9ad",
+        "source_id": "library_json",
+        "chunk_id": "2889c792d97a39328f00c5d46cd1d9ad",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u006",
+        "text": "The RFC does not explicitly forbid JSON strings which contain byte sequences\nthat don’t correspond to valid Unicode characters (e.g. unpaired UTF-16\nsurrogates), but it does note that they may cause interoperability problems.\nBy default, this module accepts and outputs (when present in the original str ) code points for such sequences.\n\nInfinite and NaN Number Values\n\nThe RFC does not permit the representation of infinite or NaN number values.\nDespite that, by default, this module accepts and outputs Infinity , -Infinity , and NaN as if they were valid JSON number literal values:\n\n>>> # Neither of these calls raises an exception, but the results are not valid JSON\n>>> json.dumps(float('-inf'))\n'-Infinity'\n>>> json.dumps(float('nan'))\n'NaN'\n>>> # Same when deserializing\n>>> json.loads('-Infinity')\n-inf\n>>> json.loads('NaN')\nnan\n\n",
+        "start": 1773,
+        "end": 2613,
+        "source_start": 19719,
+        "source_end": 20559,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 2,
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "branch_scores": {
+          "dense": 0.6668343502712337,
+          "bm25": 14.741053400683693
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "e5bbba68974eaf7f92f147ef436e7a58",
+        "source_id": "library_json",
+        "chunk_id": "e5bbba68974eaf7f92f147ef436e7a58",
+        "document_id": "library_json",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page": "library_json:u007",
+        "text": "Write the output of the infile to the given outfile . Otherwise, write it\nto sys.stdout .\n\n--sort-keys\n\nSort the output of dictionaries alphabetically by key.\n\nAdded in version 3.5.\n\n--no-ensure-ascii\n\nDisable escaping of non-ascii characters, see json.dumps() for more information.\n\nAdded in version 3.9.\n\n--json-lines\n\nParse every input line as separate JSON object.\n\nAdded in version 3.8.\n\n--indent , --tab , --no-indent , --compact\n\nMutually exclusive options for whitespace control.\n\nAdded in version 3.9.\n\n-h , --help\n\nShow the help message.\n\nFootnotes\n\nAs noted in the errata for RFC 7159 ,\nJSON permits literal U+2028 (LINE SEPARATOR) and\nU+2029 (PARAGRAPH SEPARATOR) characters in strings, whereas JavaScript\n(as of ECMAScript Edition 5.1) does not.",
+        "start": 1953,
+        "end": 2711,
+        "source_start": 23559,
+        "source_end": 24317,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "json — JSON encoder and decoder"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "json — JSON encoder and decoder",
+        "rank": 3,
+        "score": 0.02967032967032967,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 10,
+          "bm25": 5
+        },
+        "branch_scores": {
+          "dense": 0.6427161754958761,
+          "bm25": 10.630082117957903
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": null,
+    "hit3": null,
+    "elapsed_ms": 19.94080003350973
+  },
+  {
+    "query_id": "DU02",
+    "split": "dev",
+    "question": "What exact maximum recursion depth is guaranteed for pathlib.Path.walk on the Acme network filesystem used by our deployment?",
+    "filter": {},
+    "filter_origin": "none",
+    "method": "hybrid",
+    "query_kind": "original",
+    "top_k": 3,
+    "answerable": false,
+    "status": "ok",
+    "results": [
+      {
+        "id": "ad676ba016552845ee474efccf849909",
+        "source_id": "library_pathlib",
+        "chunk_id": "ad676ba016552845ee474efccf849909",
+        "document_id": "library_pathlib",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "page": "library_pathlib:u001",
+        "text": "pathlib — Object-oriented filesystem paths\n\nAdded in version 3.4.\n\nSource code: Lib/pathlib/\n\nThis module offers classes representing filesystem paths with semantics\nappropriate for different operating systems.  Path classes are divided\nbetween pure paths , which provide purely computational\noperations without I/O, and concrete paths , which\ninherit from pure paths but also provide I/O operations.\n\nIf you’ve never used this module before or just aren’t sure which class is\nright for your task, Path is most likely what you need. It instantiates\na concrete path for the platform the code is running on.\n\nPure paths are useful in some special cases; for example:\n\nIf you want to manipulate Windows paths on a Unix machine (or vice versa).\nYou cannot instantiate a WindowsPath when running on Unix, but you\ncan instantiate PureWindowsPath .\n\n",
+        "start": 0,
+        "end": 843,
+        "source_start": 0,
+        "source_end": 843,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "pathlib — Object-oriented filesystem paths"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "pathlib — Object-oriented filesystem paths",
+        "rank": 1,
+        "score": 0.03177805800756621,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "bm25": 1
+        },
+        "branch_scores": {
+          "dense": 0.673191712209143,
+          "bm25": 18.05420704518736
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "052dc569ac0a92fa8f3a922da61e70fe",
+        "source_id": "library_pathlib",
+        "chunk_id": "052dc569ac0a92fa8f3a922da61e70fe",
+        "document_id": "library_pathlib",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "page": "library_pathlib:u011",
+        "text": "By default, errors from os.scandir() are ignored.  If the optional\nargument on_error is specified, it should be a callable; it will be\ncalled with one argument, an OSError instance. The callable can handle the\nerror to continue the walk or re-raise it to stop the walk. Note that the\nfilename is available as the filename attribute of the exception object.\n\nBy default, Path.walk() does not follow symbolic links, and instead adds them\nto the filenames list. Set follow_symlinks to true to resolve symlinks\nand place them in dirnames and filenames as appropriate for their targets, and\nconsequently visit directories pointed to by symlinks (where supported).\n\nNote\n\nBe aware that setting follow_symlinks to true can lead to infinite\nrecursion if a link points to a parent directory of itself. Path.walk() does not keep track of the directories it has already visited.\n\nNote\n\n",
+        "start": 0,
+        "end": 875,
+        "source_start": 36728,
+        "source_end": 37603,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "pathlib — Object-oriented filesystem paths"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "pathlib — Object-oriented filesystem paths",
+        "rank": 2,
+        "score": 0.03149801587301587,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "branch_scores": {
+          "dense": 0.6790850272812534,
+          "bm25": 15.268101037021598
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      },
+      {
+        "id": "247adc65934c01cfea6f1e8ac4b9a49b",
+        "source_id": "library_pathlib",
+        "chunk_id": "247adc65934c01cfea6f1e8ac4b9a49b",
+        "document_id": "library_pathlib",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "page": "library_pathlib:u014",
+        "text": "Python’s str and bytes types, and portions of the os and os.path modules, are written in C and are very speedy. pathlib is\nwritten in pure Python and is often slower, but rarely slow enough to matter.\n\npathlib’s path normalization is slightly more opinionated and consistent than os.path . For example, whereas os.path.abspath() eliminates\n“ .. ” segments from a path, which may change its meaning if symlinks are\ninvolved, Path.absolute() preserves these segments for greater safety.\n\npathlib’s path normalization may render it unsuitable for some applications:\n\npathlib normalizes Path(\"my_folder/\") to Path(\"my_folder\") , which\nchanges a path’s meaning when supplied to various operating system APIs and\ncommand-line utilities. Specifically, the absence of a trailing separator\nmay allow the path to be resolved as either a file or directory, rather\nthan a directory only.\n\n",
+        "start": 889,
+        "end": 1766,
+        "source_start": 48296,
+        "source_end": 49173,
+        "metadata": {
+          "document_type": "library_reference",
+          "version": "3.13",
+          "language": "en",
+          "title": "pathlib — Object-oriented filesystem paths"
+        },
+        "document_type": "library_reference",
+        "version": "3.13",
+        "language": "en",
+        "title": "pathlib — Object-oriented filesystem paths",
+        "rank": 3,
+        "score": 0.01639344262295082,
+        "method": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        },
+        "branch_scores": {
+          "dense": 0.6883100009636182
+        },
+        "rrf_k": 60,
+        "evidence_hit": false
+      }
+    ],
+    "actual_returned": 3,
+    "hit1": null,
+    "hit3": null,
+    "elapsed_ms": 14.675299637019634
+  }
+]

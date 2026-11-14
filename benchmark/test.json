@@ -1,0 +1,162 @@
+[
+  {
+    "id": "T01",
+    "split": "test",
+    "question": "In the library reference, with json ensure_ascii=False, which characters still have to be escaped?",
+    "answerable": true,
+    "expected_answer": "Quotation mark, reverse solidus (backslash), and control characters U+0000 through U+001F still must be escaped.",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_json",
+        "page": "library_json:u002",
+        "evidence": "If False , all characters will be outputted as-is, except for\nthe characters that must be escaped: quotation mark, reverse solidus,\nand the control characters U+0000 through U+001F.",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page_start": 1257,
+        "page_end": 1438,
+        "source_start": 4886,
+        "source_end": 5067,
+        "valid_chunk_ids": [
+          "12f57c8b8fc1647aaf3b748ec350e62b"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "question": "What does json.load pass to a supplied parse_float callback, and what happens when the callback is None?",
+    "answerable": true,
+    "expected_answer": "It passes the string of every JSON float; None is equivalent to float(num_str).",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "library_json",
+        "page": "library_json:u003",
+        "evidence": "parse_float ( callable | None) – If set, a function that is called with\nthe string of every JSON float to be decoded.\nIf None (the default), it is equivalent to float(num_str) .",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page_start": 1770,
+        "page_end": 1947,
+        "source_start": 8931,
+        "source_end": 9108,
+        "valid_chunk_ids": [
+          "1d790bfef0e8cade3c20ae67e92f0f19"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "question": "In the library reference, how does csv.DictReader handle rows with more or fewer fields than fieldnames, including the defaults?",
+    "answerable": true,
+    "expected_answer": "Extra fields go in a list under restkey (default None); missing fields are filled with restval (default None).",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_csv",
+        "page": "library_csv:u002",
+        "evidence": "If a row has more fields than fieldnames, the remaining data is put in a\nlist and stored with the fieldname specified by restkey (which defaults\nto None ).  If a non-blank row has fewer fields than fieldnames, the\nmissing values are filled-in with the value of restval (which defaults\nto None ).",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "page_start": 2144,
+        "page_end": 2439,
+        "source_start": 6348,
+        "source_end": 6643,
+        "valid_chunk_ids": [
+          "7c3a1f981c67abaab3b61b8082171359"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "question": "Why can csvreader.line_num differ from the number of records returned?",
+    "answerable": true,
+    "expected_answer": "It counts lines read from the source iterator, while a record can span multiple lines.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "library_csv",
+        "page": "library_csv:u005",
+        "evidence": "The number of lines read from the source iterator. This is not the same as the\nnumber of records returned, as records can span multiple lines.",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "page_start": 2076,
+        "page_end": 2218,
+        "source_start": 17434,
+        "source_end": 17576,
+        "valid_chunk_ids": [
+          "2625d9a22a42a7d8c16e7d7e66e0bd01"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "question": "In the library reference, how does Path.resolve behave for a nonexistent path or a symlink loop when strict is True versus False?",
+    "answerable": true,
+    "expected_answer": "With strict=True it raises OSError. With strict=False it resolves as far as possible and appends the remainder without checking existence.",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_pathlib",
+        "page": "library_pathlib:u007",
+        "evidence": "If a path doesn’t exist or a symlink loop is encountered, and strict is True , OSError is raised.  If strict is False , the path is\nresolved as far as possible and any remainder is appended without checking\nwhether it exists.",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "page_start": 2559,
+        "page_end": 2784,
+        "source_start": 24126,
+        "source_end": 24351,
+        "valid_chunk_ids": [
+          "92c589e06f2cc8cb60f194cc073d4b58"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "TU01",
+    "split": "test",
+    "question": "What p95 latency in milliseconds is guaranteed for csv.DictReader when processing our 1 GB upload workload on Windows?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "TU01",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  },
+  {
+    "id": "TU02",
+    "split": "test",
+    "question": "Which backup bucket and retention period does our production project use to restore files deleted with Path.unlink?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "TU02",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  }
+]

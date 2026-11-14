@@ -1,0 +1,582 @@
+[
+  {
+    "id": "D01",
+    "split": "dev",
+    "question": "What happens if list.remove(value) cannot find that value?",
+    "answerable": true,
+    "expected_answer": "It raises ValueError.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_datastructures",
+        "page": "tutorial_datastructures:u001",
+        "evidence": "Remove the first item from the list whose value is equal to value .  It raises a ValueError if there is no such item.",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page_start": 749,
+        "page_end": 866,
+        "source_start": 749,
+        "source_end": 866,
+        "valid_chunk_ids": [
+          "ab3a48bfeceaac6887a87ee2509c8786"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D02",
+    "split": "dev",
+    "question": "In the tutorial, which container supports a queue with fast appends and pops at either end?",
+    "answerable": true,
+    "expected_answer": "collections.deque.",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "gold": [
+      {
+        "source_id": "tutorial_datastructures",
+        "page": "tutorial_datastructures:u002",
+        "evidence": "To implement a queue, use collections.deque which was designed to\nhave fast appends and pops from both ends.  For example:",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page_start": 574,
+        "page_end": 696,
+        "source_start": 4126,
+        "source_end": 4248,
+        "valid_chunk_ids": [
+          "1da22d5a24921df303d7c7e1e5050ad3"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D03",
+    "split": "dev",
+    "question": "Under what condition can a tuple be used as a dictionary key, and what disqualifies it?",
+    "answerable": true,
+    "expected_answer": "Its contents must be immutable; a mutable object directly or indirectly inside it disqualifies it.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_datastructures",
+        "page": "tutorial_datastructures:u004",
+        "evidence": "Tuples can be used\nas keys if they contain only strings, numbers, or tuples; if a tuple contains\nany mutable object either directly or indirectly, it cannot be used as a key.",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page_start": 3556,
+        "page_end": 3730,
+        "source_start": 14645,
+        "source_end": 14819,
+        "valid_chunk_ids": [
+          "8f257d50689da00b6cba2c5c20f413ba"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D04",
+    "split": "dev",
+    "question": "How can I test whether a single key is present in a dictionary?",
+    "answerable": true,
+    "expected_answer": "Use the in keyword.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_datastructures",
+        "page": "tutorial_datastructures:u005",
+        "evidence": "To check whether a single key is in the\ndictionary, use the in keyword.",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page_start": 1082,
+        "page_end": 1153,
+        "source_start": 16053,
+        "source_end": 16124,
+        "valid_chunk_ids": [
+          "22a033d16af0dd115d764e7e7c446bb6"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D05",
+    "split": "dev",
+    "question": "How can I iterate over a sequence's distinct elements in sorted order?",
+    "answerable": true,
+    "expected_answer": "Combine sorted() with set().",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_datastructures",
+        "page": "tutorial_datastructures:u006",
+        "evidence": "Using set() on a sequence eliminates duplicate elements. The use of sorted() in combination with set() over a sequence is an idiomatic\nway to loop over unique elements of the sequence in sorted order.",
+        "source": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "page_start": 159,
+        "page_end": 359,
+        "source_start": 18687,
+        "source_end": 18887,
+        "valid_chunk_ids": [
+          "8bab1ea7c0c52aa61a74a4bb57da351d"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D06",
+    "split": "dev",
+    "question": "According to the tutorial, why can a list used as a default argument keep values between function calls?",
+    "answerable": true,
+    "expected_answer": "The default is evaluated only once, so the mutable default can accumulate arguments across calls.",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "gold": [
+      {
+        "source_id": "tutorial_controlflow",
+        "page": "tutorial_controlflow:u006",
+        "evidence": "Important warning: The default value is evaluated only once. This makes a\ndifference when the default is a mutable object such as a list, dictionary, or\ninstances of most classes.  For example, the following function accumulates the\narguments passed to it on subsequent calls:",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page_start": 450,
+        "page_end": 726,
+        "source_start": 19229,
+        "source_end": 19505,
+        "valid_chunk_ids": [
+          "15b9c322f7abc24e9275fb160bc9bceb"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D07",
+    "split": "dev",
+    "question": "Does range include its specified end point?",
+    "answerable": true,
+    "expected_answer": "No; the given end point is excluded.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_controlflow",
+        "page": "tutorial_controlflow:u001",
+        "evidence": "The given end point is never part of the generated sequence;",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page_start": 2401,
+        "page_end": 2461,
+        "source_start": 2401,
+        "source_end": 2461,
+        "valid_chunk_ids": [
+          "9398a4c70ce1ead86a18c3babd8f0a1f"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D08",
+    "split": "dev",
+    "question": "When does the else clause of a for or while loop execute in relation to break?",
+    "answerable": true,
+    "expected_answer": "When the loop finishes without executing break.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_controlflow",
+        "page": "tutorial_controlflow:u002",
+        "evidence": "In a for or while loop the break statement\nmay be paired with an else clause.  If the loop finishes without\nexecuting the break , the else clause executes.",
+        "source": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "page_start": 983,
+        "page_end": 1138,
+        "source_start": 4789,
+        "source_end": 4944,
+        "valid_chunk_ids": [
+          "a1bdcf9cd2820603003cfd0d6358b070"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D09",
+    "split": "dev",
+    "question": "When a module file is executed as a script, what value is assigned to __name__?",
+    "answerable": true,
+    "expected_answer": "__main__.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_modules",
+        "page": "tutorial_modules:u002",
+        "evidence": "the code in the module will be executed, just as if you imported it, but with\nthe __name__ set to \"__main__\" .  That means that by adding this code at\nthe end of your module:",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page_start": 1725,
+        "page_end": 1899,
+        "source_start": 5244,
+        "source_end": 5418,
+        "valid_chunk_ids": [
+          "6ea3f8a0eebf870ded24a0620959205d"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D10",
+    "split": "dev",
+    "question": "What names does from module import * exclude, and why is this generally discouraged?",
+    "answerable": true,
+    "expected_answer": "It excludes names starting with underscore and may introduce unknown names that hide existing names.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_modules",
+        "page": "tutorial_modules:u002",
+        "evidence": "This imports all names except those beginning with an underscore ( _ ).\nIn most cases Python programmers do not use this facility since it introduces\nan unknown set of names into the interpreter, possibly hiding some things\nyou have already defined.",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page_start": 371,
+        "page_end": 620,
+        "source_start": 3890,
+        "source_end": 4139,
+        "valid_chunk_ids": [
+          "47ea2ffe7b5a8aa74aac712c30bd91ad"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D11",
+    "split": "dev",
+    "question": "Where does Python cache a module's compiled code to speed loading?",
+    "answerable": true,
+    "expected_answer": "In the __pycache__ directory.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_modules",
+        "page": "tutorial_modules:u003",
+        "evidence": "To speed up loading modules, Python caches the compiled version of each module\nin the __pycache__ directory",
+        "source": "https://docs.python.org/3.13/tutorial/modules.html",
+        "page_start": 32,
+        "page_end": 139,
+        "source_start": 7353,
+        "source_end": 7460,
+        "valid_chunk_ids": [
+          "e751762efbb5e171a523f4fcf15a82bb"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D12",
+    "split": "dev",
+    "question": "In the tutorial's file handling guidance, what encoding is recommended for text files unless another is needed?",
+    "answerable": true,
+    "expected_answer": "Explicit encoding='utf-8'.",
+    "filter": {
+      "document_type": "tutorial"
+    },
+    "filter_origin": "Explicit tutorial/library-reference scope in the question, supplied before retrieval",
+    "gold": [
+      {
+        "source_id": "tutorial_inputoutput",
+        "page": "tutorial_inputoutput:u003",
+        "evidence": "Because UTF-8 is the modern de-facto standard, encoding=\"utf-8\" is\nrecommended unless you know that you need to use a different encoding.",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page_start": 3589,
+        "page_end": 3726,
+        "source_start": 10780,
+        "source_end": 10917,
+        "valid_chunk_ids": [
+          "e9aa07cf76158381a94524b5fb268db0"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D13",
+    "split": "dev",
+    "question": "Why should I use with when working with a file, even if the block may raise an exception?",
+    "answerable": true,
+    "expected_answer": "The file is properly closed when the suite finishes, even if an exception occurs.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_inputoutput",
+        "page": "tutorial_inputoutput:u004",
+        "evidence": "It is good practice to use the with keyword when dealing\nwith file objects.  The advantage is that the file is properly closed\nafter its suite finishes, even if an exception is raised at some\npoint.",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page_start": 449,
+        "page_end": 647,
+        "source_start": 11546,
+        "source_end": 11744,
+        "valid_chunk_ids": [
+          "8056c2dbb2b3fa00da8c1e3d516fe4f9"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D14",
+    "split": "dev",
+    "question": "What is the name for converting a Python data hierarchy into a JSON string, and the reverse operation?",
+    "answerable": true,
+    "expected_answer": "Serializing and deserializing, respectively.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_inputoutput",
+        "page": "tutorial_inputoutput:u005",
+        "evidence": "The standard module called json can take Python\ndata hierarchies, and convert them to string representations; this process is\ncalled serializing .  Reconstructing the data from the string representation\nis called deserializing .",
+        "source": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "page_start": 2008,
+        "page_end": 2236,
+        "source_start": 16627,
+        "source_end": 16855,
+        "valid_chunk_ids": [
+          "49993829c0638e3becf48631d03893bc"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "D15",
+    "split": "dev",
+    "question": "Why put success-only code in try/except's else clause rather than inside try?",
+    "answerable": true,
+    "expected_answer": "It avoids accidentally catching exceptions from code outside the intended protected operation.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "tutorial_errors",
+        "page": "tutorial_errors:u003",
+        "evidence": "The use of the else clause is better than adding additional code to\nthe try clause because it avoids accidentally catching an exception\nthat wasn’t raised by the code being protected by the try … except statement.",
+        "source": "https://docs.python.org/3.13/tutorial/errors.html",
+        "page_start": 695,
+        "page_end": 908,
+        "source_start": 7789,
+        "source_end": 8002,
+        "valid_chunk_ids": [
+          "8b21719b431bfc2979a2044097bd4999"
+        ]
+      }
+    ],
+    "origin": "Day06 development question, revalidated against the reused B chunks; no Day06 test reused.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "DU01",
+    "split": "dev",
+    "question": "What measured throughput in MB/s does json.dumps achieve on a Ryzen 7 7800X3D in the benchmark supplied with this corpus?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "DU01",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  },
+  {
+    "id": "DU02",
+    "split": "dev",
+    "question": "What exact maximum recursion depth is guaranteed for pathlib.Path.walk on the Acme network filesystem used by our deployment?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "DU02",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  },
+  {
+    "id": "T01",
+    "split": "test",
+    "question": "In the library reference, with json ensure_ascii=False, which characters still have to be escaped?",
+    "answerable": true,
+    "expected_answer": "Quotation mark, reverse solidus (backslash), and control characters U+0000 through U+001F still must be escaped.",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_json",
+        "page": "library_json:u002",
+        "evidence": "If False , all characters will be outputted as-is, except for\nthe characters that must be escaped: quotation mark, reverse solidus,\nand the control characters U+0000 through U+001F.",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page_start": 1257,
+        "page_end": 1438,
+        "source_start": 4886,
+        "source_end": 5067,
+        "valid_chunk_ids": [
+          "12f57c8b8fc1647aaf3b748ec350e62b"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "question": "What does json.load pass to a supplied parse_float callback, and what happens when the callback is None?",
+    "answerable": true,
+    "expected_answer": "It passes the string of every JSON float; None is equivalent to float(num_str).",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "library_json",
+        "page": "library_json:u003",
+        "evidence": "parse_float ( callable | None) – If set, a function that is called with\nthe string of every JSON float to be decoded.\nIf None (the default), it is equivalent to float(num_str) .",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "page_start": 1770,
+        "page_end": 1947,
+        "source_start": 8931,
+        "source_end": 9108,
+        "valid_chunk_ids": [
+          "1d790bfef0e8cade3c20ae67e92f0f19"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "question": "In the library reference, how does csv.DictReader handle rows with more or fewer fields than fieldnames, including the defaults?",
+    "answerable": true,
+    "expected_answer": "Extra fields go in a list under restkey (default None); missing fields are filled with restval (default None).",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_csv",
+        "page": "library_csv:u002",
+        "evidence": "If a row has more fields than fieldnames, the remaining data is put in a\nlist and stored with the fieldname specified by restkey (which defaults\nto None ).  If a non-blank row has fewer fields than fieldnames, the\nmissing values are filled-in with the value of restval (which defaults\nto None ).",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "page_start": 2144,
+        "page_end": 2439,
+        "source_start": 6348,
+        "source_end": 6643,
+        "valid_chunk_ids": [
+          "7c3a1f981c67abaab3b61b8082171359"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "question": "Why can csvreader.line_num differ from the number of records returned?",
+    "answerable": true,
+    "expected_answer": "It counts lines read from the source iterator, while a record can span multiple lines.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [
+      {
+        "source_id": "library_csv",
+        "page": "library_csv:u005",
+        "evidence": "The number of lines read from the source iterator. This is not the same as the\nnumber of records returned, as records can span multiple lines.",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "page_start": 2076,
+        "page_end": 2218,
+        "source_start": 17434,
+        "source_end": 17576,
+        "valid_chunk_ids": [
+          "2625d9a22a42a7d8c16e7d7e66e0bd01"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "question": "In the library reference, how does Path.resolve behave for a nonexistent path or a symlink loop when strict is True versus False?",
+    "answerable": true,
+    "expected_answer": "With strict=True it raises OSError. With strict=False it resolves as far as possible and appends the remainder without checking existence.",
+    "filter": {
+      "document_type": "library_reference"
+    },
+    "filter_origin": "Explicit library-reference scope in question, supplied before retrieval.",
+    "gold": [
+      {
+        "source_id": "library_pathlib",
+        "page": "library_pathlib:u007",
+        "evidence": "If a path doesn’t exist or a symlink loop is encountered, and strict is True , OSError is raised.  If strict is False , the path is\nresolved as far as possible and any remainder is appended without checking\nwhether it exists.",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "page_start": 2559,
+        "page_end": 2784,
+        "source_start": 24126,
+        "source_end": 24351,
+        "valid_chunk_ids": [
+          "92c589e06f2cc8cb60f194cc073d4b58"
+        ]
+      }
+    ],
+    "origin": "New Day07 held-out topic; not a paraphrase of the five Day06 test questions.",
+    "gold_validation": "Exact substring, source/page/offset and complete B chunk mechanically validated; AI-assisted authoring, human semantic review pending."
+  },
+  {
+    "id": "TU01",
+    "split": "test",
+    "question": "What p95 latency in milliseconds is guaranteed for csv.DictReader when processing our 1 GB upload workload on Windows?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "TU01",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  },
+  {
+    "id": "TU02",
+    "split": "test",
+    "question": "Which backup bucket and retention period does our production project use to restore files deleted with Path.unlink?",
+    "answerable": false,
+    "expected_answer": "State that the supplied corpus does not provide the requested deployment/measurement facts; do not invent them.",
+    "filter": {},
+    "filter_origin": "none",
+    "gold": [],
+    "absence_check_id": "TU02",
+    "gold_validation": "AI-assisted absence review; human semantic review pending."
+  }
+]

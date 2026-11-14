@@ -1,0 +1,21 @@
+{
+  "corrected_at": "2026-11-14T09:08:13.294154+00:00",
+  "scope": "Evaluator-only CER bug fix before selection/test; no model, retrieval, raw trace, gold or semantic label changed.",
+  "case": "C1/D03",
+  "issue": "The original aggregator skipped context evidence when final answer status was error, although sufficient context was actually sent.",
+  "before_C1_CER": {
+    "n": 13,
+    "N": 15
+  },
+  "after_C1_CER": {
+    "n": 14,
+    "N": 15
+  },
+  "strict_C1_unchanged": {
+    "n": 14,
+    "N": 17
+  },
+  "original_evaluator_sha256": "8d455029d104aa91da49011c751a5a7867a72d8c7a633d4f8fb96630bd5c88e1",
+  "corrected_evaluator_sha256": "6322dc91486ab8df828b5c1cd9e4a447606262233256743cea904b27aef21603",
+  "snapshot": "results/history/evaluation_before_cer_fix.py"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer preserves all three escaping exceptions with ensure_ascii=False: quotation mark, reverse solidus and U+0000-U+001F control characters. These are explicitly listed in the cited source.",
+    "abstention_correct": null,
+    "query_id": "T01",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The ensure_ascii=False paragraph explicitly lists all three character classes that still require escaping."
+    ],
+    "trace_sha256": "86da867b55c944b19da56dbd87b76d489b623b9bf26b5987703f255466555070",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/T01.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer says the callback receives each JSON float as a string and None defaults to float(num_str); both required conditions are explicitly in its citation.",
+    "abstention_correct": null,
+    "query_id": "T02",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The parse_float entry explicitly specifies a string argument for every float and equivalence to float(num_str) when None."
+    ],
+    "trace_sha256": "ac7b2b6fed8ba2f4a1a798719daa0e10fc4b1f2c67310bc097342fc0b49c8780",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/T02.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer gives the complete overflow/underflow distinction, extra values in a restkey list, missing fields filled by restval, both None defaults and the non-blank-row qualifier, all directly supported.",
+    "abstention_correct": null,
+    "query_id": "T03",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly states list storage for excess fields under restkey=None and missing-field replacement with restval=None for a non-blank row."
+    ],
+    "trace_sha256": "6fefca5d59793bac3c5c1fe41a5e9916ea2968d545ff6ea7a727bad382084e76",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/T03.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer confines itself to the documented line-count versus record-count distinction and multi-line records. Unlike C0, it does not add a separately sourced quoted-field example.",
+    "abstention_correct": null,
+    "query_id": "T04",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly states line_num is source lines read, not records returned, because a record can span several lines."
+    ],
+    "trace_sha256": "1384738db9f4f1b1b8d4a6f639ff1095a6ac174b0fb46e3236f9781af132cb3b",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/T04.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer correctly states OSError for missing paths/symlink loops in strict mode, partial resolution and unchecked remainder in non-strict mode, and no exception for symlink loops in non-strict Python 3.13. The two citations collectively cover these behaviors and version condition.",
+    "abstention_correct": null,
+    "query_id": "T05",
+    "citation_support": [
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "The Path.resolve contract explicitly covers strict OSError and non-strict partial resolution with unchecked remainder.",
+      "The Python 3.13 change note explicitly says symlink loops raise OSError in strict mode and no exception in non-strict mode."
+    ],
+    "trace_sha256": "53180d29c8a7b2a1769c77e7070ed442e5e13c1b7f1b7ff4e93c210908e587ae",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/T05.json"
+  },
+  {
+    "answer_grade": null,
+    "context_grade": null,
+    "reason": "The response explicitly declines an unsupported p95 guarantee and supplies no guessed performance, upload-workload or Windows-specific timing. The missing deployment measurements match the frozen absence check.",
+    "abstention_correct": true,
+    "query_id": "TU01",
+    "citation_support": [],
+    "citation_reasons": [],
+    "trace_sha256": "7e81f2a2d440656ce38eea23606797cb8a87ebc953e6b8163698c343fb2d0c0d",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/TU01.json"
+  },
+  {
+    "answer_grade": null,
+    "context_grade": null,
+    "reason": "The response declines to invent the production project backup bucket or retention period. It only summarizes that the supplied Path.unlink material concerns deletion and does not contain private backup configuration.",
+    "abstention_correct": true,
+    "query_id": "TU02",
+    "citation_support": [],
+    "citation_reasons": [],
+    "trace_sha256": "8201149c70fe6c79e08ed45bfdfffb3bf6dad6cb1551ce5572596ef84b555a75",
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/test/C2/cases/TU02.json"
+  }
+]

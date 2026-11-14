@@ -1,0 +1,1327 @@
+{
+  "passed": true,
+  "traces": 68,
+  "checks": 11523,
+  "errors": [],
+  "warnings": [
+    {
+      "query_id": "DU02",
+      "code": "undeclared_inline_citations",
+      "ids": [
+        "052dc569ac0a92fa8f3a922da61e70fe"
+      ],
+      "detail": "Raw trace preserved; semantic/citation audit must account for inline references, including abstention reasons."
+    },
+    {
+      "query_id": "DU02",
+      "code": "undeclared_inline_citations",
+      "ids": [
+        "052dc569ac0a92fa8f3a922da61e70fe"
+      ],
+      "detail": "Raw trace preserved; semantic/citation audit must account for inline references, including abstention reasons."
+    }
+  ],
+  "results": [
+    {
+      "query_id": "D01",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D02",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 182,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "1da22d5a24921df303d7c7e1e5050ad3"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D03",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 179,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8f257d50689da00b6cba2c5c20f413ba"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D04",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "22a033d16af0dd115d764e7e7c446bb6"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D05",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8bab1ea7c0c52aa61a74a4bb57da351d"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D06",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "15b9c322f7abc24e9275fb160bc9bceb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D07",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.02
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "9398a4c70ce1ead86a18c3babd8f0a1f"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D08",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "a1bdcf9cd2820603003cfd0d6358b070"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D09",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "78f7c929568bf0db03728e719ca4fc66"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D10",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "47ea2ffe7b5a8aa74aac712c30bd91ad"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D11",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 179,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e751762efbb5e171a523f4fcf15a82bb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D12",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e9aa07cf76158381a94524b5fb268db0"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D13",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 155,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "bbd4ba18a3f1ef51de8ca892997bc033",
+        "95ebcc1c6c63b03f2ab3c568278ff641"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D14",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "49993829c0638e3becf48631d03893bc"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D15",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8b21719b431bfc2979a2044097bd4999"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU01",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU02",
+      "config_id": "C0",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [
+        {
+          "code": "undeclared_inline_citations",
+          "ids": [
+            "052dc569ac0a92fa8f3a922da61e70fe"
+          ],
+          "detail": "Raw trace preserved; semantic/citation audit must account for inline references, including abstention reasons."
+        }
+      ],
+      "inline_citation_ids": [
+        "052dc569ac0a92fa8f3a922da61e70fe"
+      ],
+      "undeclared_inline_citation_count": 1,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D01",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D02",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "6f2bd8b85da0fdf48d2db330415246c3"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D03",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 172,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D04",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "22a033d16af0dd115d764e7e7c446bb6"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D05",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.01
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8bab1ea7c0c52aa61a74a4bb57da351d"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D06",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "15b9c322f7abc24e9275fb160bc9bceb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D07",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "9398a4c70ce1ead86a18c3babd8f0a1f"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D08",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "a1bdcf9cd2820603003cfd0d6358b070"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D09",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.01
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "6ea3f8a0eebf870ded24a0620959205d"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D10",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "47ea2ffe7b5a8aa74aac712c30bd91ad"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D11",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e751762efbb5e171a523f4fcf15a82bb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D12",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e9aa07cf76158381a94524b5fb268db0"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D13",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 155,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8056c2dbb2b3fa00da8c1e3d516fe4f9",
+        "95ebcc1c6c63b03f2ab3c568278ff641"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D14",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "49993829c0638e3becf48631d03893bc"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D15",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8b21719b431bfc2979a2044097bd4999"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU01",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.01
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU02",
+      "config_id": "C1",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [
+        {
+          "code": "undeclared_inline_citations",
+          "ids": [
+            "052dc569ac0a92fa8f3a922da61e70fe"
+          ],
+          "detail": "Raw trace preserved; semantic/citation audit must account for inline references, including abstention reasons."
+        }
+      ],
+      "inline_citation_ids": [
+        "052dc569ac0a92fa8f3a922da61e70fe"
+      ],
+      "undeclared_inline_citation_count": 1,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D01",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "ab3a48bfeceaac6887a87ee2509c8786"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D02",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "1da22d5a24921df303d7c7e1e5050ad3"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D03",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8f257d50689da00b6cba2c5c20f413ba"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D04",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "22a033d16af0dd115d764e7e7c446bb6"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D05",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8bab1ea7c0c52aa61a74a4bb57da351d"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D06",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "15b9c322f7abc24e9275fb160bc9bceb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D07",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "9398a4c70ce1ead86a18c3babd8f0a1f"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D08",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "a1bdcf9cd2820603003cfd0d6358b070"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D09",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "78f7c929568bf0db03728e719ca4fc66"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D10",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 155,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "47ea2ffe7b5a8aa74aac712c30bd91ad",
+        "a966c3c4df69948ac48a7427e2ed39d5"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D11",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e751762efbb5e171a523f4fcf15a82bb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D12",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 157,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e9aa07cf76158381a94524b5fb268db0"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D13",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8056c2dbb2b3fa00da8c1e3d516fe4f9"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D14",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "49993829c0638e3becf48631d03893bc"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D15",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 154,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8b21719b431bfc2979a2044097bd4999"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU01",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.04
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU02",
+      "config_id": "C2",
+      "passed": true,
+      "checks": 152,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D01",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 204,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.42
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D02",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 211,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.43
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "1da22d5a24921df303d7c7e1e5050ad3"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D03",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 231,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.34,
+        2.54
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8f257d50689da00b6cba2c5c20f413ba"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D04",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.41
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "22a033d16af0dd115d764e7e7c446bb6"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D05",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.32
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8bab1ea7c0c52aa61a74a4bb57da351d"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D06",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 236,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.21,
+        2.33
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "15b9c322f7abc24e9275fb160bc9bceb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D07",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.57
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "9398a4c70ce1ead86a18c3babd8f0a1f"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D08",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.44
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "a1bdcf9cd2820603003cfd0d6358b070"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D09",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.4
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "78f7c929568bf0db03728e719ca4fc66"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D10",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.2
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "47ea2ffe7b5a8aa74aac712c30bd91ad"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D11",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.26
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e751762efbb5e171a523f4fcf15a82bb"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D12",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 211,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.14
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "e9aa07cf76158381a94524b5fb268db0"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D13",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 207,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.28
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "bbd4ba18a3f1ef51de8ca892997bc033",
+        "8056c2dbb2b3fa00da8c1e3d516fe4f9"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D14",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.36
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "49993829c0638e3becf48631d03893bc"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "D15",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 206,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.28
+      ],
+      "warnings": [],
+      "inline_citation_ids": [
+        "8b21719b431bfc2979a2044097bd4999"
+      ],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU01",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 204,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.48
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    },
+    {
+      "query_id": "DU02",
+      "config_id": "C3",
+      "passed": true,
+      "checks": 204,
+      "errors": [],
+      "native_cost_amounts": [
+        2,
+        2.27
+      ],
+      "warnings": [],
+      "inline_citation_ids": [],
+      "undeclared_inline_citation_count": 0,
+      "native_cost_units": "provider_native_unspecified; not inferred as USD",
+      "unknown_usage_attempts": 0,
+      "semantic_and_human_audit_verified": false
+    }
+  ],
+  "semantic_and_human_audit_verified": false,
+  "scope": "Offline source/context/native-action trace consistency only; not a complete lab gate.",
+  "verified_at": "2026-11-14T09:06:06.359756+00:00"
+}

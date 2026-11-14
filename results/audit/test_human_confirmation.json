@@ -1,0 +1,102 @@
+{
+  "kind": "test",
+  "confirmed_at": "2026-11-14T09:16:58.396110+00:00",
+  "reviewer": "Nguyễn Mạnh Tường",
+  "statement": "tôi đối chiếu và xác nhận ok, không cần sửa nhãn( có người review rồi nên bạn không lo về phần đạo đức AI nhé, tiếp tục hoàn thành bài lab đi)",
+  "source": "Explicit student confirmation in conversation; recorder does not itself constitute review.",
+  "artifact_hashes": {
+    "results/audit/test/C0_reviews.json": "fa85742fdc562646df4b77053f4c8e568d09b5e2a8713a588587d3c3a2b25b32",
+    "results/audit/test/C2_reviews.json": "1c24fbd0ebc37fd02a5e92a7daab52fe3213ec51c311683d6b31be575d0ea898",
+    "results/audit/test/REVIEW.md": "9d5a2dfb04c41e424b181e1b0e72983f1de49ac49a3ae9928f7db142b9a00892",
+    "results/audit/test/C0_REVIEW.md": "d2617c729ed37e1f53a19595428b69b82cdf3eeddf5968b479763c0cefcc6bb9",
+    "results/audit/test/C2_REVIEW.md": "4cadb62d5f9a972127ec83a3d6f6eb5ed27fc151049b4f12ac781992533a84bf"
+  },
+  "approved_items": [
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "T01",
+      "sha256": "88badf575a64922f1ce8afba0ba1ea91e6c78751134e0c336de17a1c0b79710b"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "T02",
+      "sha256": "be255f23cfbe08e8b56eb3f3d27ceb77bd09bcec3c90074945198ed5aed6d0af"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "T03",
+      "sha256": "1c59095574f6d757997af64686cbd789875fe0ee8b60cb85f8c9661bf74c4993"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "T04",
+      "sha256": "9366bb975cb3a28ca7efba59a0ec8c13fbb78b2dcefdfb34dbb203a9c83e4f69"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "T05",
+      "sha256": "a162d5b5f4fc8a7dad967e5f095d8e7c8f00de47d8fc0bd6db928433e6fa558e"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "TU01",
+      "sha256": "f82415865c418377f9bff81dd4b4e12ee2a57a69421c36232295e74887cef43a"
+    },
+    {
+      "artifact": "results/audit/test/C0_reviews.json",
+      "config_id": null,
+      "query_id": "TU02",
+      "sha256": "26b62695308a4b7c44811297da6cc8065313a285a2b8dc7f3eb5b4fc069c6a58"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "T01",
+      "sha256": "37b467c9dc126d0494e19d8b9a7728d77590e295c11328af3da61a646573c458"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "T02",
+      "sha256": "5950da2ada94259463953b582a6c68b59518e4c3147c5777ed171ae1461dbaba"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "T03",
+      "sha256": "7029b80721875f806f8652460639fe1a326798e6d2071cff93718a56a79f0753"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "T04",
+      "sha256": "3d202de2cdbb7d7280d96e741315ca02f11f7932ebab6f6751368d02022c2f58"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "T05",
+      "sha256": "e03aaadf1b2e58bcbc63876331501791bf46c50607c67b479ca368ac78bdeeb4"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "TU01",
+      "sha256": "72dc0c6f26f59ecb52584e108819fc515fffb1b85175d8787f2874d250ae6992"
+    },
+    {
+      "artifact": "results/audit/test/C2_reviews.json",
+      "config_id": null,
+      "query_id": "TU02",
+      "sha256": "a1cc630743491136270f8a2d4d1120c66139ee3a58127bbfc0774527dcd7657a"
+    }
+  ],
+  "count": 14,
+  "draft_provenance": "AI-assisted preparation, reviewed and accepted by the student. Not independent blind annotations."
+}

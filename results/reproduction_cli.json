@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-11-14T09:20:56.715127+00:00",
+  "command": "python -X utf8 scripts/reproduce.py",
+  "isolated_workspace": ".local/reproduction_20261114T091947979685Z",
+  "source_mode": "remote pinned downloads; freshly generated vectors/store",
+  "benchmark_checks": {
+    "frozen_files_checked": 6,
+    "questions": 24,
+    "gold_alternatives_checked": 20,
+    "absence_checks": 4,
+    "human_review_status": "pending",
+    "semantic_human_review_not_inferred": true
+  },
+  "retrieval_comparisons": [
+    {
+      "method": "dense",
+      "hit1_equal": true,
+      "hit3_equal": true,
+      "all_ranked_ids_equal": true,
+      "errors": 0
+    },
+    {
+      "method": "bm25",
+      "hit1_equal": true,
+      "hit3_equal": true,
+      "all_ranked_ids_equal": true,
+      "errors": 0
+    },
+    {
+      "method": "hybrid",
+      "hit1_equal": true,
+      "hit3_equal": true,
+      "all_ranked_ids_equal": true,
+      "errors": 0
+    }
+  ],
+  "elapsed_seconds": 68.65952620003372,
+  "new_model_api_run": false,
+  "passed": true,
+  "scope": "Retrieval/index and frozen benchmark reproduction on this environment; no assertion of independent or byte-identical new model answers."
+}

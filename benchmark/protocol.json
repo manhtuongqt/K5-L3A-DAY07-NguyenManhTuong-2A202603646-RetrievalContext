@@ -1,0 +1,55 @@
+{
+  "version": "day07-basic-v1",
+  "created_at": "2026-11-14T08:49:16.925588+00:00",
+  "scope": "Basic 85-point lab only. Bonus deferred by the student.",
+  "corpus": {
+    "source_day06_commit": "64c4ab778f81ba5608d4b2b57315f6369aedd0fd",
+    "pages_sha256": "16c33ff8363b1d5b1833a77ec3cf2891a7ead1eea202a51bba092d981cdbf92f",
+    "chunks_B_sha256": "bcc757f290099109a9361d8f5e7f2812c3ea57901b5048854c93269ccbd808e1",
+    "source_units": 69,
+    "chunks": 312
+  },
+  "split": {
+    "dev": {
+      "answerable": 15,
+      "unanswerable": 2
+    },
+    "test": {
+      "answerable": 5,
+      "unanswerable": 2
+    }
+  },
+  "test_independence": "Five new library-reference topics, not the previously inspected Day06 held-out questions. No test output will be used to modify configurations or labels.",
+  "agent_input_projection": [
+    "id",
+    "question",
+    "filter"
+  ],
+  "retrieval_hit": "One returned chunk must contain one complete exact evidence alternative, matching source_id and page. Multiple alternatives are OR. Unanswerable cases excluded from denominator.",
+  "original_query_ranking": "Run original user question with provided filter and fixed top_k=3 for dense, bm25 and hybrid. Rewritten-query pipeline traces reported separately.",
+  "context_evidence_rate": "Check exact gold evidence with source/page against actual final context chunks/text sent to the last model call; never infer from retrieved ranking or unused candidates.",
+  "context_grade": {
+    "0": "No relevant evidence in final context",
+    "1": "Relevant but incomplete condition or source",
+    "2": "All required evidence and source present"
+  },
+  "answer_grade": {
+    "0": "Incorrect, unsupported, or false abstention",
+    "1": "Partially correct/complete with evidence",
+    "2": "Correct and complete, grounded in final context"
+  },
+  "citation_support": "Manual semantic label and reason for every cited occurrence/ID: must appear in actual final context and support the associated answer conditions. ID validity alone never suffices.",
+  "abstention": "Unanswerable accepted only if the response actually declines the requested unsupported facts without adding invented assertions. False abstention on answerable is reported separately.",
+  "selection_order": [
+    "maximize strict_end_to_end_pass_n_over_all_dev_including_errors",
+    "maximize context_evidence_rate",
+    "minimize false_abstention_count",
+    "minimize mean_cost_usd_if_complete_known",
+    "minimize median_end_to_end_latency_ms",
+    "lexicographic_config_id"
+  ],
+  "selection_missing_cost_rule": "If any tied configuration has unknown cost, skip cost comparison for the entire tie group; do not replace unknown costs with zero.",
+  "errors": "Save model/store errors, retries and any known usage separately. Strict end-to-end n/N keeps all scheduled cases. Quality metrics on successful outputs also report missing labels and failed-case counts.",
+  "audit": "AI-assisted drafts remain identified until the student explicitly reviews the current benchmark/answers/citations. Day06 audit approval is not transferable.",
+  "freeze": "Benchmark and protocol are locked before any Day07 dev retrieval run; selected config/prompt/code/model/reviews locked before test."
+}

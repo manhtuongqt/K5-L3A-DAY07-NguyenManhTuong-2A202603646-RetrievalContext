@@ -1,0 +1,114 @@
+{
+  "kind": "benchmark",
+  "confirmed_at": "2026-11-14T08:56:06.294101+00:00",
+  "reviewer": "Nguyễn Mạnh Tường",
+  "statement": "ok mình xác nhận chuẩn rồi, tiếp tục đi, mình đã review là chuẩn rồi nhé.",
+  "source": "Explicit student confirmation in conversation; recorder does not itself constitute review.",
+  "artifact_hashes": {
+    "benchmark/questions.json": "11d0fae2c041b7edc9474846ab6b72af33a42938bf232d79e539afcba491eb18",
+    "benchmark/dev.json": "51347723d40f869ff0c6409c2467a9f5a9ff0ce0f11d8617e35cfa5c4c7fd708",
+    "benchmark/test.json": "369980f93d72f8c4e25f822c56eac7788a904409872ea89607bbfe99fad5c44a",
+    "benchmark/absence_checks.json": "3ffc4118f7b3f505aabeb76e4870fb41671cd1bf6328bfd0faee9f04362e18e6",
+    "benchmark/REVIEW.md": "543f91468a414053320b6bc5d007c03917c8570d354008de029bc6f7d76ff44c"
+  },
+  "approved_items": [
+    {
+      "id": "D01",
+      "sha256": "5929d280938904c99da14a0ebc71e16cb94bd6e75d076da402565c8b3cb93ceb"
+    },
+    {
+      "id": "D02",
+      "sha256": "afbbc6cdd08920740ca9ec474a3bb9ab42117154b2457fe4ddb8a361a46f15d4"
+    },
+    {
+      "id": "D03",
+      "sha256": "b9d4c1b43ba2b36f7c0c969661e57d664a269803fe74b0398d22015b28849aa1"
+    },
+    {
+      "id": "D04",
+      "sha256": "7e79965d49ac86657dc794a623cc4d8a9e01a69d083deacd826cde2c91610580"
+    },
+    {
+      "id": "D05",
+      "sha256": "02b3071b8b8e4474bc716e1e94a61bee3304b537998c5dfa50e569ce6d30b3fd"
+    },
+    {
+      "id": "D06",
+      "sha256": "eacba06765fb0ea49889c2e5b3ae5aef59c169c7f7a51334521e53007a28d7a8"
+    },
+    {
+      "id": "D07",
+      "sha256": "967dcf03f9c5021ec509721d384e37b9c12756329e84c882e87553548bf93583"
+    },
+    {
+      "id": "D08",
+      "sha256": "4d740e1210daf706d42984d312c9a7a1696a88e68334b2849cc1917699191e51"
+    },
+    {
+      "id": "D09",
+      "sha256": "86e92c2dd749bc915e123a5c9c3cc2ec56741729a828d57043ef911c1c0efa2f"
+    },
+    {
+      "id": "D10",
+      "sha256": "66523b52da7190271795d9174fbb555a4c1df8cf155c6350642ae35842306a48"
+    },
+    {
+      "id": "D11",
+      "sha256": "22613f160e453fb113d15e9edbececa5fbc20795d65733e3a6f77048ad6a3a28"
+    },
+    {
+      "id": "D12",
+      "sha256": "34e5464332fa3f76f22ab4a5c52b5e4e92a5bc06784953db6c366ba517b245f3"
+    },
+    {
+      "id": "D13",
+      "sha256": "e5587dfb33be7c9222efa6df0b424875e4866b1b24a5718184de71ea51e99cf1"
+    },
+    {
+      "id": "D14",
+      "sha256": "29ae9123bb236d03a8eba8c215022e5ab78647cd898a2455a71895547ebb6102"
+    },
+    {
+      "id": "D15",
+      "sha256": "e7c13a44eacfd0561b3aa804b235920347f1a0c14af6223f88e5cb2d704c7e63"
+    },
+    {
+      "id": "DU01",
+      "sha256": "54239fb09c34667dce367402d1e1a67e7513522eb0676282659c4e5342abfba6"
+    },
+    {
+      "id": "DU02",
+      "sha256": "94b7b669a77882d950156f36e900e7c5c6044c58bd64a0e39c60972255554c2c"
+    },
+    {
+      "id": "T01",
+      "sha256": "dc5c14ea9dfa41fcff2d73f744cc478e4aa41fb6e5ac7c47a2dc105d4ffe1b98"
+    },
+    {
+      "id": "T02",
+      "sha256": "431c1ffd3c1e5a3669fafcb243f086303625af64c83cfe1cbf7b753738a69e05"
+    },
+    {
+      "id": "T03",
+      "sha256": "486867851e6ddeba1498440581ae246b5aa7d87a6bd9ccc429d7dd3897cb7049"
+    },
+    {
+      "id": "T04",
+      "sha256": "ea2c4229902622b9e3f799d1ad343d7f5d1f585e27025ab393bc7ac598ffec90"
+    },
+    {
+      "id": "T05",
+      "sha256": "242826ab7fe21dfc05a282047f1ee5a386f3c923a3678ef5b925ae5fa6062917"
+    },
+    {
+      "id": "TU01",
+      "sha256": "a09ebc5e625869f209f5cf001db4845b04c2f9324fb07caf679c7a28dd6e5c9e"
+    },
+    {
+      "id": "TU02",
+      "sha256": "3cdbf1a301d01dd32d023a3837b421a7b24e9ae3b2a232b765c53e24cb8d962b"
+    }
+  ],
+  "count": 24,
+  "draft_provenance": "AI-assisted preparation, reviewed and accepted by the student. Not independent blind annotations."
+}

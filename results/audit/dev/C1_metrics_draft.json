@@ -1,0 +1,99 @@
+{
+  "cases": 17,
+  "successes": 16,
+  "errors": 1,
+  "missing_traces": [],
+  "pending_reviews": [],
+  "error_types": {
+    "invalid_model_action": 1
+  },
+  "tool_use": {
+    "n": 16,
+    "N": 16,
+    "rate": 1.0
+  },
+  "tool_call_distribution": {
+    "1": 16
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 0,
+    "2": 13,
+    "N": 14,
+    "mean": 1.8571428571428572
+  },
+  "context_grades": {
+    "0": 1,
+    "1": 0,
+    "2": 13,
+    "N": 14
+  },
+  "citation_validity": {
+    "n": 14,
+    "N": 15,
+    "rate": 0.9333333333333333
+  },
+  "answer_citation_coverage": {
+    "n": 13,
+    "N": 13,
+    "rate": 1.0
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 1,
+    "N": 14,
+    "rate": 0.07142857142857142
+  },
+  "strict_end_to_end": {
+    "n": 14,
+    "N": 17,
+    "rate": 0.8235294117647058
+  },
+  "context_evidence_rate": {
+    "n": 13,
+    "N": 15,
+    "rate": 0.8666666666666667
+  },
+  "answerable_scheduled": 15,
+  "unanswerable_scheduled": 2,
+  "review_provenance": {
+    "AI-assisted draft; student review pending": 16
+  },
+  "reviewed_case_count": 16,
+  "human_confirmed_case_count": 0,
+  "completion": {
+    "n": 16,
+    "N": 17,
+    "rate": 0.9411764705882353
+  },
+  "elapsed_ms": {
+    "N": 17,
+    "median": 12086.043800227344,
+    "total": 209148.00939988345,
+    "mean": 12302.824082346086
+  },
+  "cost": {
+    "known_total_usd": 0,
+    "known_case_count": 0,
+    "complete": false,
+    "mean_per_scheduled_case_usd": null,
+    "unknown_is_not_zero": true
+  },
+  "tokens": {
+    "input_tokens": 22750,
+    "output_tokens": 2603,
+    "total_tokens": 25353
+  },
+  "all_semantic_labels_present": true,
+  "citation_accounting": {
+    "distinct_cited_ids_per_answer_total": 15,
+    "inline_occurrences_total": 15,
+    "declared_cited_ids_total": 14,
+    "extra_inline_ids_total": 1,
+    "policy": "Support labels per distinct citation ID within each answer, not per repeated printed occurrence; both denominators are disclosed."
+  }
+}

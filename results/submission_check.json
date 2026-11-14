@@ -1,0 +1,514 @@
+{
+  "checked_at": "2026-11-14T09:26:38.589855+00:00",
+  "scope": "Basic Day07 only; bonus deferred",
+  "full_basic_submission_ready": true,
+  "checks": [
+    {
+      "name": "benchmark_24_with_frozen_sources",
+      "passed": true,
+      "evidence": {
+        "frozen_files_checked": 6,
+        "questions": 24,
+        "gold_alternatives_checked": 20,
+        "absence_checks": 4,
+        "human_review_status": "pending",
+        "semantic_human_review_not_inferred": true
+      }
+    },
+    {
+      "name": "source_and_chunk_sizes",
+      "passed": true,
+      "evidence": {
+        "chunks": 312,
+        "units": 69
+      }
+    },
+    {
+      "name": "source_model_data_hashes",
+      "passed": true,
+      "evidence": "data/day6_manifest.json"
+    },
+    {
+      "name": "frozen_implementation",
+      "passed": true,
+      "evidence": {
+        "scripts/run_experiments.py": "0112049723dc5520e22d00335c764ec510ee3f554d734ce8cad50bbafbc01d4f",
+        "src/__init__.py": "2380716aa974a4be597273e46155600ed523406069ce2a73b0c0540030d569d8",
+        "src/agent_runtime.py": "8730c61bbf1690f92bd1ffe274f65a122e42fb6808b173b606cb19070ba353af",
+        "src/context.py": "4973bfcbfb35c0a6d7f5fa65289b197bfd9c77576a5ff3ff472ed2514ee837c5",
+        "src/evaluation.py": "6322dc91486ab8df828b5c1cd9e4a447606262233256743cea904b27aef21603",
+        "src/lab_common.py": "3b7f2ee1341cd7c6d0829a263262a022d26a6a835205d22d907556663b05c295",
+        "src/model_client.py": "0075462c69794e9330e5a4102df27031a6e599348ac67fd26d34fe8d188354b2",
+        "src/retrieval.py": "94371c890d619d6d0dd7ed70dd5e87f72bb0fe4b53b7aee2b0db848bab449f7a",
+        "scripts/review_helpers.py": "b3e06515b0fe3e6c5675d13e19ae6db8f3345f6fc5a1ce6a4b0ab7aefa43a4ca",
+        "scripts/human_reviews.py": "d263b7f0622a2ef780e80d3d85f9e169e1be89d94cb3c633c943fdd73fd830fd",
+        "scripts/freeze_selection.py": "6a1daab496e1daeb83cf732b57c881c50f2896edccb4b8cfe16830c29a01fc68"
+      }
+    },
+    {
+      "name": "frozen_configs",
+      "passed": true,
+      "evidence": "results/selection.json config_hashes"
+    },
+    {
+      "name": "frozen_dev_trace_and_label_files",
+      "passed": true,
+      "evidence": "results/selection.json dev_trace_hashes/dev_review_hashes"
+    },
+    {
+      "name": "selection_before_test",
+      "passed": true,
+      "evidence": {
+        "selected_at": "2026-11-14T09:09:02.330845+00:00",
+        "winner": "C2"
+      }
+    },
+    {
+      "name": "human_benchmark_confirmation",
+      "passed": true,
+      "evidence": "results/audit/benchmark_human_confirmation.json"
+    },
+    {
+      "name": "dev_C0_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 17,
+        "expected": 17
+      }
+    },
+    {
+      "name": "dev_C0_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 17,
+        "errors": 0
+      }
+    },
+    {
+      "name": "dev_C1_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 17,
+        "expected": 17
+      }
+    },
+    {
+      "name": "dev_C1_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 16,
+        "errors": 1
+      }
+    },
+    {
+      "name": "dev_C2_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 17,
+        "expected": 17
+      }
+    },
+    {
+      "name": "dev_C2_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 17,
+        "errors": 0
+      }
+    },
+    {
+      "name": "dev_C3_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 17,
+        "expected": 17
+      }
+    },
+    {
+      "name": "dev_C3_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 17,
+        "errors": 0
+      }
+    },
+    {
+      "name": "test_C0_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 7,
+        "expected": 7
+      }
+    },
+    {
+      "name": "test_C0_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 7,
+        "errors": 0
+      }
+    },
+    {
+      "name": "test_C2_complete_scheduled_cases",
+      "passed": true,
+      "evidence": {
+        "count": 7,
+        "expected": 7
+      }
+    },
+    {
+      "name": "test_C2_semantic_reviews",
+      "passed": true,
+      "evidence": {
+        "reviewed": 7,
+        "errors": 0
+      }
+    },
+    {
+      "name": "all_metrics_recompute",
+      "passed": true,
+      "evidence": [
+        {
+          "split": "dev",
+          "config": "C0",
+          "equal": true
+        },
+        {
+          "split": "dev",
+          "config": "C1",
+          "equal": true
+        },
+        {
+          "split": "dev",
+          "config": "C2",
+          "equal": true
+        },
+        {
+          "split": "dev",
+          "config": "C3",
+          "equal": true
+        },
+        {
+          "split": "test",
+          "config": "C0",
+          "equal": true
+        },
+        {
+          "split": "test",
+          "config": "C2",
+          "equal": true
+        }
+      ]
+    },
+    {
+      "name": "all_real_runtime_trace_integrity",
+      "passed": true,
+      "evidence": {
+        "traces": 82,
+        "checks": 13766,
+        "errors": [],
+        "warnings": 2
+      }
+    },
+    {
+      "name": "model_native_tools_used",
+      "passed": true,
+      "evidence": "82 actual model-controlled traces; request schemas/messages retained"
+    },
+    {
+      "name": "retrieval_dense_top3_comparable",
+      "passed": true,
+      "evidence": {
+        "cases": 17,
+        "answerable": 15,
+        "hit1": 12,
+        "hit3": 13
+      }
+    },
+    {
+      "name": "retrieval_bm25_top3_comparable",
+      "passed": true,
+      "evidence": {
+        "cases": 17,
+        "answerable": 15,
+        "hit1": 12,
+        "hit3": 12
+      }
+    },
+    {
+      "name": "retrieval_hybrid_top3_comparable",
+      "passed": true,
+      "evidence": {
+        "cases": 17,
+        "answerable": 15,
+        "hit1": 13,
+        "hit3": 13
+      }
+    },
+    {
+      "name": "two_real_improvement_configurations",
+      "passed": true,
+      "evidence": "C2 rank fusion; C3 larger context policy; all have separate dev runs"
+    },
+    {
+      "name": "required_code_tests",
+      "passed": true,
+      "evidence": {
+        "run_at": "2026-11-14T09:09:01.609067+00:00",
+        "command": "python -X utf8 scripts/run_tests.py",
+        "tests": 64,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true,
+        "log": "results/tests.log",
+        "scope": "Includes fixture behavioral tests, pinned source/benchmark checks and real local retrieval integration; not semantic model benchmark."
+      }
+    },
+    {
+      "name": "remote_retrieval_reproduction",
+      "passed": true,
+      "evidence": "results/retrieval_reproduction.json"
+    },
+    {
+      "name": "documented_reproduction_cli_executed",
+      "passed": true,
+      "evidence": "results/reproduction_cli.json"
+    },
+    {
+      "name": "persistent_Qdrant_real_collection",
+      "passed": true,
+      "evidence": {
+        "collection": "day07_B",
+        "points": 312
+      }
+    },
+    {
+      "name": "submission_documents_and_links",
+      "passed": true,
+      "evidence": {
+        "missing": [],
+        "broken": []
+      }
+    },
+    {
+      "name": "two_dev_errors_and_measured_limits",
+      "passed": true,
+      "evidence": "report sections 4–6"
+    },
+    {
+      "name": "known_secret_values_absent_and_private_paths_ignored",
+      "passed": true,
+      "evidence": {
+        "exposures": [],
+        "limit": "Checks known configured secrets and ignored paths, not a proof against every possible secret."
+      }
+    }
+  ],
+  "passed_checks": 34,
+  "total_checks": 34,
+  "semantic_output_rows_confirmed": 81,
+  "pending_required_human_reviews": 0,
+  "runtime_traces": 82,
+  "selected_config": "C2",
+  "test_results": {
+    "C0": {
+      "cases": 7,
+      "successes": 7,
+      "errors": 0,
+      "missing_traces": [],
+      "pending_reviews": [],
+      "error_types": {},
+      "tool_use": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "tool_call_distribution": {
+        "1": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5
+      },
+      "citation_validity": {
+        "n": 5,
+        "N": 6,
+        "rate": 0.8333333333333334
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5,
+        "rate": 0.0
+      },
+      "strict_end_to_end": {
+        "n": 6,
+        "N": 7,
+        "rate": 0.8571428571428571
+      },
+      "context_evidence_rate": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "answerable_scheduled": 5,
+      "unanswerable_scheduled": 2,
+      "review_provenance": {
+        "AI-assisted draft reviewed and accepted by the student": 7
+      },
+      "reviewed_case_count": 7,
+      "human_confirmed_case_count": 7,
+      "completion": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "elapsed_ms": {
+        "N": 7,
+        "median": 12815.519999712706,
+        "total": 95596.5371010825,
+        "mean": 13656.6481572975
+      },
+      "cost": {
+        "known_total_usd": 0,
+        "known_case_count": 0,
+        "complete": false,
+        "mean_per_scheduled_case_usd": null,
+        "unknown_is_not_zero": true
+      },
+      "tokens": {
+        "input_tokens": 11269,
+        "output_tokens": 1298,
+        "total_tokens": 12567
+      },
+      "all_semantic_labels_present": true,
+      "citation_counts": {
+        "distinct_cited_ids_per_answer_total": 6,
+        "inline_occurrences_total": 6,
+        "declared_cited_ids_total": 6,
+        "extra_inline_ids_total": 0,
+        "policy": "Support labels per distinct citation ID within each answer, not per repeated printed occurrence; both denominators are disclosed."
+      },
+      "confirmation_file": "results/audit/test_human_confirmation.json"
+    },
+    "C2": {
+      "cases": 7,
+      "successes": 7,
+      "errors": 0,
+      "missing_traces": [],
+      "pending_reviews": [],
+      "error_types": {},
+      "tool_use": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "tool_call_distribution": {
+        "1": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0
+      },
+      "context_grades": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5
+      },
+      "citation_validity": {
+        "n": 6,
+        "N": 6,
+        "rate": 1.0
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5,
+        "rate": 0.0
+      },
+      "strict_end_to_end": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "context_evidence_rate": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "answerable_scheduled": 5,
+      "unanswerable_scheduled": 2,
+      "review_provenance": {
+        "AI-assisted draft reviewed and accepted by the student": 7
+      },
+      "reviewed_case_count": 7,
+      "human_confirmed_case_count": 7,
+      "completion": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "elapsed_ms": {
+        "N": 7,
+        "median": 12325.422900728881,
+        "total": 89704.03440110385,
+        "mean": 12814.86205730055
+      },
+      "cost": {
+        "known_total_usd": 0,
+        "known_case_count": 0,
+        "complete": false,
+        "mean_per_scheduled_case_usd": null,
+        "unknown_is_not_zero": true
+      },
+      "tokens": {
+        "input_tokens": 10060,
+        "output_tokens": 1227,
+        "total_tokens": 11287
+      },
+      "all_semantic_labels_present": true,
+      "citation_counts": {
+        "distinct_cited_ids_per_answer_total": 6,
+        "inline_occurrences_total": 6,
+        "declared_cited_ids_total": 6,
+        "extra_inline_ids_total": 0,
+        "policy": "Support labels per distinct citation ID within each answer, not per repeated printed occurrence; both denominators are disclosed."
+      },
+      "confirmation_file": "results/audit/test_human_confirmation.json"
+    }
+  },
+  "lms": "Student submits; agent has not submitted to LMS.",
+  "grading_limit": "Evidence verification, not a guarantee of instructor points; no optional bonus claim."
+}

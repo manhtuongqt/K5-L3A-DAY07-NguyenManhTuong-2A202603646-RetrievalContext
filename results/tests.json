@@ -1,0 +1,11 @@
+{
+  "run_at": "2026-11-14T09:09:01.609067+00:00",
+  "command": "python -X utf8 scripts/run_tests.py",
+  "tests": 64,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "log": "results/tests.log",
+  "scope": "Includes fixture behavioral tests, pinned source/benchmark checks and real local retrieval integration; not semantic model benchmark."
+}

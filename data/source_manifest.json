@@ -1,0 +1,741 @@
+{
+  "created_at": "2026-11-13T10:20:01.630303+00:00",
+  "counting_rule": "HTML body only; contiguous ordered paragraph-boundary units target 3500, minimum 1500 normalized characters; merge short tail. No duplicates. Units are not physical PDF pages.",
+  "excluded": [
+    "navigation",
+    "sidebar",
+    "footer",
+    "table of contents wrapper",
+    "scripts/styles",
+    "license page (retained as legal notice, not counted)"
+  ],
+  "normalization": "NFC, NBSP to space, LF, tabs to four spaces, trailing-space removal, max one empty line; code indentation preserved.",
+  "modifications": "HTML content extracted and reformatted as plain text; partitioned and chunked. Original snapshots and license retained.",
+  "license_snapshot_sha256": "ced1a5587f118ad9454a151b721292abe08379b6ce390c5f8b7c165720412ca0",
+  "total_content_units": 69,
+  "sources": [
+    {
+      "source_id": "tutorial_controlflow",
+      "title": "4. More Control Flow Tools",
+      "html_title": "4. More Control Flow Tools — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "snapshot_path": "data/raw/tutorial_controlflow.html",
+      "normalized_path": "data/normalized/tutorial_controlflow.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:53.136169+00:00",
+      "raw_sha256": "b985d14cc9c7b109996d54c17e32b3f214c5e4cd0e9020de060f12ed0413bd49",
+      "normalized_sha256": "38260d30dc6526bb833ba10325926d2f07cf1c04dbd433283209396d68a7c9d1",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 35976,
+      "page_count": 10,
+      "pages": [
+        {
+          "page_id": "tutorial_controlflow:u001",
+          "start": 0,
+          "end": 3804,
+          "boundary_start": 0,
+          "boundary_end": 3806,
+          "normalized_chars": 3804
+        },
+        {
+          "page_id": "tutorial_controlflow:u002",
+          "start": 3806,
+          "end": 7566,
+          "boundary_start": 3806,
+          "boundary_end": 7568,
+          "normalized_chars": 3760
+        },
+        {
+          "page_id": "tutorial_controlflow:u003",
+          "start": 7568,
+          "end": 11094,
+          "boundary_start": 7568,
+          "boundary_end": 11096,
+          "normalized_chars": 3526
+        },
+        {
+          "page_id": "tutorial_controlflow:u004",
+          "start": 11096,
+          "end": 15218,
+          "boundary_start": 11096,
+          "boundary_end": 15220,
+          "normalized_chars": 4122
+        },
+        {
+          "page_id": "tutorial_controlflow:u005",
+          "start": 15220,
+          "end": 18777,
+          "boundary_start": 15220,
+          "boundary_end": 18779,
+          "normalized_chars": 3557
+        },
+        {
+          "page_id": "tutorial_controlflow:u006",
+          "start": 18779,
+          "end": 22280,
+          "boundary_start": 18779,
+          "boundary_end": 22282,
+          "normalized_chars": 3501
+        },
+        {
+          "page_id": "tutorial_controlflow:u007",
+          "start": 22282,
+          "end": 25822,
+          "boundary_start": 22282,
+          "boundary_end": 25824,
+          "normalized_chars": 3540
+        },
+        {
+          "page_id": "tutorial_controlflow:u008",
+          "start": 25824,
+          "end": 29495,
+          "boundary_start": 25824,
+          "boundary_end": 29497,
+          "normalized_chars": 3671
+        },
+        {
+          "page_id": "tutorial_controlflow:u009",
+          "start": 29497,
+          "end": 33539,
+          "boundary_start": 29497,
+          "boundary_end": 33541,
+          "normalized_chars": 4042
+        },
+        {
+          "page_id": "tutorial_controlflow:u010",
+          "start": 33541,
+          "end": 35976,
+          "boundary_start": 33541,
+          "boundary_end": 35976,
+          "normalized_chars": 2435
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial_datastructures",
+      "title": "5. Data Structures",
+      "html_title": "5. Data Structures — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "snapshot_path": "data/raw/tutorial_datastructures.html",
+      "normalized_path": "data/normalized/tutorial_datastructures.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:53.919039+00:00",
+      "raw_sha256": "14cbb79ca8991c75ff9a17db2057640e528bb43b00925e58dd57de2cde746e5b",
+      "normalized_sha256": "bbaff8843a4b3b97703b04e21b7529d47f210110b02d97d1cb1601edc23924f9",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 22915,
+      "page_count": 6,
+      "pages": [
+        {
+          "page_id": "tutorial_datastructures:u001",
+          "start": 0,
+          "end": 3550,
+          "boundary_start": 0,
+          "boundary_end": 3552,
+          "normalized_chars": 3550
+        },
+        {
+          "page_id": "tutorial_datastructures:u002",
+          "start": 3552,
+          "end": 7411,
+          "boundary_start": 3552,
+          "boundary_end": 7413,
+          "normalized_chars": 3859
+        },
+        {
+          "page_id": "tutorial_datastructures:u003",
+          "start": 7413,
+          "end": 11087,
+          "boundary_start": 7413,
+          "boundary_end": 11089,
+          "normalized_chars": 3674
+        },
+        {
+          "page_id": "tutorial_datastructures:u004",
+          "start": 11089,
+          "end": 14969,
+          "boundary_start": 11089,
+          "boundary_end": 14971,
+          "normalized_chars": 3880
+        },
+        {
+          "page_id": "tutorial_datastructures:u005",
+          "start": 14971,
+          "end": 18526,
+          "boundary_start": 14971,
+          "boundary_end": 18528,
+          "normalized_chars": 3555
+        },
+        {
+          "page_id": "tutorial_datastructures:u006",
+          "start": 18528,
+          "end": 22915,
+          "boundary_start": 18528,
+          "boundary_end": 22915,
+          "normalized_chars": 4387
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial_modules",
+      "title": "6. Modules",
+      "html_title": "6. Modules — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "snapshot_path": "data/raw/tutorial_modules.html",
+      "normalized_path": "data/normalized/tutorial_modules.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:54.596097+00:00",
+      "raw_sha256": "e331102d5eba9f1135e82bbec33defbceb638fe3b6d190694ba93b008e597bdc",
+      "normalized_sha256": "eb846f6871203faf5864d47ad646ea2b572acbedaf93948df39e5d0de75ebf2e",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 23046,
+      "page_count": 6,
+      "pages": [
+        {
+          "page_id": "tutorial_modules:u001",
+          "start": 0,
+          "end": 3517,
+          "boundary_start": 0,
+          "boundary_end": 3519,
+          "normalized_chars": 3517
+        },
+        {
+          "page_id": "tutorial_modules:u002",
+          "start": 3519,
+          "end": 7319,
+          "boundary_start": 3519,
+          "boundary_end": 7321,
+          "normalized_chars": 3800
+        },
+        {
+          "page_id": "tutorial_modules:u003",
+          "start": 7321,
+          "end": 10836,
+          "boundary_start": 7321,
+          "boundary_end": 10838,
+          "normalized_chars": 3515
+        },
+        {
+          "page_id": "tutorial_modules:u004",
+          "start": 10838,
+          "end": 14832,
+          "boundary_start": 10838,
+          "boundary_end": 14834,
+          "normalized_chars": 3994
+        },
+        {
+          "page_id": "tutorial_modules:u005",
+          "start": 14834,
+          "end": 18573,
+          "boundary_start": 14834,
+          "boundary_end": 18575,
+          "normalized_chars": 3739
+        },
+        {
+          "page_id": "tutorial_modules:u006",
+          "start": 18575,
+          "end": 23046,
+          "boundary_start": 18575,
+          "boundary_end": 23046,
+          "normalized_chars": 4471
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial_inputoutput",
+      "title": "7. Input and Output",
+      "html_title": "7. Input and Output — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "snapshot_path": "data/raw/tutorial_inputoutput.html",
+      "normalized_path": "data/normalized/tutorial_inputoutput.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:55.320795+00:00",
+      "raw_sha256": "be403cb24a4d23ddcde2f29ac20df4743e8216ac69d1244382c58dc2ae2a44f4",
+      "normalized_sha256": "b9702689bbbe86868a6cacb6abf3b32e41079b6cf0cd65508ad69a74484fd67b",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 18506,
+      "page_count": 5,
+      "pages": [
+        {
+          "page_id": "tutorial_inputoutput:u001",
+          "start": 0,
+          "end": 3617,
+          "boundary_start": 0,
+          "boundary_end": 3619,
+          "normalized_chars": 3617
+        },
+        {
+          "page_id": "tutorial_inputoutput:u002",
+          "start": 3619,
+          "end": 7189,
+          "boundary_start": 3619,
+          "boundary_end": 7191,
+          "normalized_chars": 3570
+        },
+        {
+          "page_id": "tutorial_inputoutput:u003",
+          "start": 7191,
+          "end": 11095,
+          "boundary_start": 7191,
+          "boundary_end": 11097,
+          "normalized_chars": 3904
+        },
+        {
+          "page_id": "tutorial_inputoutput:u004",
+          "start": 11097,
+          "end": 14617,
+          "boundary_start": 11097,
+          "boundary_end": 14619,
+          "normalized_chars": 3520
+        },
+        {
+          "page_id": "tutorial_inputoutput:u005",
+          "start": 14619,
+          "end": 18506,
+          "boundary_start": 14619,
+          "boundary_end": 18506,
+          "normalized_chars": 3887
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial_errors",
+      "title": "8. Errors and Exceptions",
+      "html_title": "8. Errors and Exceptions — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "snapshot_path": "data/raw/tutorial_errors.html",
+      "normalized_path": "data/normalized/tutorial_errors.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:56.067593+00:00",
+      "raw_sha256": "979a709f665207b9bfaddd3dd8ea2ff9632afa4f3a7986198730cac14e662683",
+      "normalized_sha256": "a87c4dd27f3e0cab9b80ff6feca41b3722f0ccf887b47b610e0f55345bcc9b8e",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 21649,
+      "page_count": 6,
+      "pages": [
+        {
+          "page_id": "tutorial_errors:u001",
+          "start": 0,
+          "end": 3588,
+          "boundary_start": 0,
+          "boundary_end": 3590,
+          "normalized_chars": 3588
+        },
+        {
+          "page_id": "tutorial_errors:u002",
+          "start": 3590,
+          "end": 7092,
+          "boundary_start": 3590,
+          "boundary_end": 7094,
+          "normalized_chars": 3502
+        },
+        {
+          "page_id": "tutorial_errors:u003",
+          "start": 7094,
+          "end": 10818,
+          "boundary_start": 7094,
+          "boundary_end": 10820,
+          "normalized_chars": 3724
+        },
+        {
+          "page_id": "tutorial_errors:u004",
+          "start": 10820,
+          "end": 14503,
+          "boundary_start": 10820,
+          "boundary_end": 14505,
+          "normalized_chars": 3683
+        },
+        {
+          "page_id": "tutorial_errors:u005",
+          "start": 14505,
+          "end": 18674,
+          "boundary_start": 14505,
+          "boundary_end": 18676,
+          "normalized_chars": 4169
+        },
+        {
+          "page_id": "tutorial_errors:u006",
+          "start": 18676,
+          "end": 21649,
+          "boundary_start": 18676,
+          "boundary_end": 21649,
+          "normalized_chars": 2973
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial_classes",
+      "title": "9. Classes",
+      "html_title": "9. Classes — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "snapshot_path": "data/raw/tutorial_classes.html",
+      "normalized_path": "data/normalized/tutorial_classes.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:56.869634+00:00",
+      "raw_sha256": "6adb5bbe14eb9e8ed843d0ba03a33dd392d8ff8e8a70c5e1673dc97497cb2311",
+      "normalized_sha256": "b500a069274cd7189a7638c1ec07c501c4bf969be011c5032c1aa28897477a43",
+      "document_type": "tutorial",
+      "version": "3.13",
+      "normalized_chars": 33903,
+      "page_count": 9,
+      "pages": [
+        {
+          "page_id": "tutorial_classes:u001",
+          "start": 0,
+          "end": 4086,
+          "boundary_start": 0,
+          "boundary_end": 4088,
+          "normalized_chars": 4086
+        },
+        {
+          "page_id": "tutorial_classes:u002",
+          "start": 4088,
+          "end": 7861,
+          "boundary_start": 4088,
+          "boundary_end": 7863,
+          "normalized_chars": 3773
+        },
+        {
+          "page_id": "tutorial_classes:u003",
+          "start": 7863,
+          "end": 11427,
+          "boundary_start": 7863,
+          "boundary_end": 11429,
+          "normalized_chars": 3564
+        },
+        {
+          "page_id": "tutorial_classes:u004",
+          "start": 11429,
+          "end": 15246,
+          "boundary_start": 11429,
+          "boundary_end": 15248,
+          "normalized_chars": 3817
+        },
+        {
+          "page_id": "tutorial_classes:u005",
+          "start": 15248,
+          "end": 18822,
+          "boundary_start": 15248,
+          "boundary_end": 18824,
+          "normalized_chars": 3574
+        },
+        {
+          "page_id": "tutorial_classes:u006",
+          "start": 18824,
+          "end": 22550,
+          "boundary_start": 18824,
+          "boundary_end": 22552,
+          "normalized_chars": 3726
+        },
+        {
+          "page_id": "tutorial_classes:u007",
+          "start": 22552,
+          "end": 26369,
+          "boundary_start": 22552,
+          "boundary_end": 26371,
+          "normalized_chars": 3817
+        },
+        {
+          "page_id": "tutorial_classes:u008",
+          "start": 26371,
+          "end": 30347,
+          "boundary_start": 26371,
+          "boundary_end": 30349,
+          "normalized_chars": 3976
+        },
+        {
+          "page_id": "tutorial_classes:u009",
+          "start": 30349,
+          "end": 33903,
+          "boundary_start": 30349,
+          "boundary_end": 33903,
+          "normalized_chars": 3554
+        }
+      ]
+    },
+    {
+      "source_id": "library_json",
+      "title": "json — JSON encoder and decoder",
+      "html_title": "json — JSON encoder and decoder — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/library/json.html",
+      "snapshot_path": "data/raw/library_json.html",
+      "normalized_path": "data/normalized/library_json.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:58.849757+00:00",
+      "raw_sha256": "f2e17fb3ae2eb9c04261a84022b3a1f978c846043aa33edaab1effae6881da3b",
+      "normalized_sha256": "8246d832439e4e6281dc2e9910e1e0775a88167c47f2aae9bef414a3cfc12004",
+      "document_type": "library_reference",
+      "version": "3.13",
+      "normalized_chars": 24317,
+      "page_count": 7,
+      "pages": [
+        {
+          "page_id": "library_json:u001",
+          "start": 0,
+          "end": 3627,
+          "boundary_start": 0,
+          "boundary_end": 3629,
+          "normalized_chars": 3627
+        },
+        {
+          "page_id": "library_json:u002",
+          "start": 3629,
+          "end": 7159,
+          "boundary_start": 3629,
+          "boundary_end": 7161,
+          "normalized_chars": 3530
+        },
+        {
+          "page_id": "library_json:u003",
+          "start": 7161,
+          "end": 10757,
+          "boundary_start": 7161,
+          "boundary_end": 10759,
+          "normalized_chars": 3596
+        },
+        {
+          "page_id": "library_json:u004",
+          "start": 10759,
+          "end": 14440,
+          "boundary_start": 10759,
+          "boundary_end": 14442,
+          "normalized_chars": 3681
+        },
+        {
+          "page_id": "library_json:u005",
+          "start": 14442,
+          "end": 17944,
+          "boundary_start": 14442,
+          "boundary_end": 17946,
+          "normalized_chars": 3502
+        },
+        {
+          "page_id": "library_json:u006",
+          "start": 17946,
+          "end": 21604,
+          "boundary_start": 17946,
+          "boundary_end": 21606,
+          "normalized_chars": 3658
+        },
+        {
+          "page_id": "library_json:u007",
+          "start": 21606,
+          "end": 24317,
+          "boundary_start": 21606,
+          "boundary_end": 24317,
+          "normalized_chars": 2711
+        }
+      ]
+    },
+    {
+      "source_id": "library_csv",
+      "title": "csv — CSV File Reading and Writing",
+      "html_title": "csv — CSV File Reading and Writing — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/library/csv.html",
+      "snapshot_path": "data/raw/library_csv.html",
+      "normalized_path": "data/normalized/library_csv.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:19:59.783210+00:00",
+      "raw_sha256": "2254bd9a7ee1d0b801cd37a9d3879f2421532356c8c0c1be3c238c1931a76b91",
+      "normalized_sha256": "d5a651297205053dce6fdfe9fc4b612b9c2a51597f090ad74ad4b2a01d5bbe09",
+      "document_type": "library_reference",
+      "version": "3.13",
+      "normalized_chars": 21438,
+      "page_count": 6,
+      "pages": [
+        {
+          "page_id": "library_csv:u001",
+          "start": 0,
+          "end": 4202,
+          "boundary_start": 0,
+          "boundary_end": 4204,
+          "normalized_chars": 4202
+        },
+        {
+          "page_id": "library_csv:u002",
+          "start": 4204,
+          "end": 8199,
+          "boundary_start": 4204,
+          "boundary_end": 8201,
+          "normalized_chars": 3995
+        },
+        {
+          "page_id": "library_csv:u003",
+          "start": 8201,
+          "end": 11854,
+          "boundary_start": 8201,
+          "boundary_end": 11856,
+          "normalized_chars": 3653
+        },
+        {
+          "page_id": "library_csv:u004",
+          "start": 11856,
+          "end": 15356,
+          "boundary_start": 11856,
+          "boundary_end": 15358,
+          "normalized_chars": 3500
+        },
+        {
+          "page_id": "library_csv:u005",
+          "start": 15358,
+          "end": 18917,
+          "boundary_start": 15358,
+          "boundary_end": 18919,
+          "normalized_chars": 3559
+        },
+        {
+          "page_id": "library_csv:u006",
+          "start": 18919,
+          "end": 21438,
+          "boundary_start": 18919,
+          "boundary_end": 21438,
+          "normalized_chars": 2519
+        }
+      ]
+    },
+    {
+      "source_id": "library_pathlib",
+      "title": "pathlib — Object-oriented filesystem paths",
+      "html_title": "pathlib — Object-oriented filesystem paths — Python 3.13.18 documentation",
+      "source_path_or_url": "https://docs.python.org/3.13/library/pathlib.html",
+      "snapshot_path": "data/raw/library_pathlib.html",
+      "normalized_path": "data/normalized/library_pathlib.txt",
+      "license_or_permission": "PSF-2.0; example code additionally available under 0BSD",
+      "license_url": "https://docs.python.org/3.13/license.html",
+      "accessed_at": "2026-11-13T10:20:00.983128+00:00",
+      "raw_sha256": "da02a59913db792408c91079876305d6568566844e19631f1b6d657947848267",
+      "normalized_sha256": "7768ef7cd12dd8a08d6f4c27f72658a8ab53d309715c3dfa5631a058e7d29aa1",
+      "document_type": "library_reference",
+      "version": "3.13",
+      "normalized_chars": 51571,
+      "page_count": 14,
+      "pages": [
+        {
+          "page_id": "library_pathlib:u001",
+          "start": 0,
+          "end": 3548,
+          "boundary_start": 0,
+          "boundary_end": 3550,
+          "normalized_chars": 3548
+        },
+        {
+          "page_id": "library_pathlib:u002",
+          "start": 3550,
+          "end": 7148,
+          "boundary_start": 3550,
+          "boundary_end": 7150,
+          "normalized_chars": 3598
+        },
+        {
+          "page_id": "library_pathlib:u003",
+          "start": 7150,
+          "end": 10693,
+          "boundary_start": 7150,
+          "boundary_end": 10695,
+          "normalized_chars": 3543
+        },
+        {
+          "page_id": "library_pathlib:u004",
+          "start": 10695,
+          "end": 14282,
+          "boundary_start": 10695,
+          "boundary_end": 14284,
+          "normalized_chars": 3587
+        },
+        {
+          "page_id": "library_pathlib:u005",
+          "start": 14284,
+          "end": 18032,
+          "boundary_start": 14284,
+          "boundary_end": 18034,
+          "normalized_chars": 3748
+        },
+        {
+          "page_id": "library_pathlib:u006",
+          "start": 18034,
+          "end": 21565,
+          "boundary_start": 18034,
+          "boundary_end": 21567,
+          "normalized_chars": 3531
+        },
+        {
+          "page_id": "library_pathlib:u007",
+          "start": 21567,
+          "end": 25325,
+          "boundary_start": 21567,
+          "boundary_end": 25327,
+          "normalized_chars": 3758
+        },
+        {
+          "page_id": "library_pathlib:u008",
+          "start": 25327,
+          "end": 28968,
+          "boundary_start": 25327,
+          "boundary_end": 28970,
+          "normalized_chars": 3641
+        },
+        {
+          "page_id": "library_pathlib:u009",
+          "start": 28970,
+          "end": 32812,
+          "boundary_start": 28970,
+          "boundary_end": 32814,
+          "normalized_chars": 3842
+        },
+        {
+          "page_id": "library_pathlib:u010",
+          "start": 32814,
+          "end": 36726,
+          "boundary_start": 32814,
+          "boundary_end": 36728,
+          "normalized_chars": 3912
+        },
+        {
+          "page_id": "library_pathlib:u011",
+          "start": 36728,
+          "end": 40314,
+          "boundary_start": 36728,
+          "boundary_end": 40316,
+          "normalized_chars": 3586
+        },
+        {
+          "page_id": "library_pathlib:u012",
+          "start": 40316,
+          "end": 43869,
+          "boundary_start": 40316,
+          "boundary_end": 43871,
+          "normalized_chars": 3553
+        },
+        {
+          "page_id": "library_pathlib:u013",
+          "start": 43871,
+          "end": 47405,
+          "boundary_start": 43871,
+          "boundary_end": 47407,
+          "normalized_chars": 3534
+        },
+        {
+          "page_id": "library_pathlib:u014",
+          "start": 47407,
+          "end": 51571,
+          "boundary_start": 47407,
+          "boundary_end": 51571,
+          "normalized_chars": 4164
+        }
+      ]
+    }
+  ]
+}

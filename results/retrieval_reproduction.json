@@ -1,0 +1,75 @@
+{
+  "verified_at": "2026-11-14T08:55:46.874673+00:00",
+  "passed": true,
+  "command_executed": "python -X utf8 scripts/prepare_data.py --root .local/retrieval_reproduction",
+  "source_mode": "Remote pinned GitHub sources and HuggingFace model; no --day6-root, no cached model or vectors at start",
+  "source_commit": "64c4ab778f81ba5608d4b2b57315f6369aedd0fd",
+  "prepare_elapsed_seconds": 84.50648989994079,
+  "vector_sha256": "266db21df0190f393a3c8b2927ef49c1a96b70c42801b628d095bf7157278fc9",
+  "canonical_chunks_sha256": "d29a0d3c7c2efaf0a6ab6bddc3dda3aad4a92255f4a70ef4b7455eb39f2e0a31",
+  "checks": {
+    "downloaded_pinned_GitHub_snapshot_without_Day06_checkout": true,
+    "same_312_canonical_chunk_records": true,
+    "same_canonical_chunk_file_sha256": true,
+    "same_69_page_records_and_bytes": true,
+    "same_embedding_lock_bytes": true,
+    "all_model_files_verified_by_pinned_hash": true,
+    "regenerated_vectors_byte_identical_to_Day06": true,
+    "regenerated_arrays_exactly_equal": true,
+    "Qdrant_independent_store_312_points": true,
+    "all_312_page_and_source_offsets_validated": true,
+    "dense_returns_real_verbatim_chunks": true,
+    "bm25_returns_real_verbatim_chunks": true,
+    "hybrid_returns_real_verbatim_chunks": true,
+    "persisted_store_reopen_identical_ranks_and_scores": true
+  },
+  "smoke_query_origin": "First96 characters of first source chunk, not a benchmark query",
+  "smoke_query": "4. More Control Flow Tools\n\nAs well as the while statement just introduced, Python uses a few mo",
+  "smoke": [
+    {
+      "method": "dense",
+      "actual_returned": 3,
+      "ids": [
+        "a80b9a6f4bba6909c36d4339d89c3720",
+        "bc9109e8ac1204d8b32c7151784ecb5e",
+        "d6a38ec1c40c06b19533a2552562fa60"
+      ],
+      "scores": [
+        0.77374916111585,
+        0.700258838962224,
+        0.6835172675437236
+      ]
+    },
+    {
+      "method": "bm25",
+      "actual_returned": 3,
+      "ids": [
+        "a80b9a6f4bba6909c36d4339d89c3720",
+        "2f7b2187de4ea5f5f85e28e066a5f56c",
+        "4073a8ff5a9c8159aa93b7c256fae23a"
+      ],
+      "scores": [
+        42.32907819114381,
+        11.73338604532767,
+        11.062455591824765
+      ]
+    },
+    {
+      "method": "hybrid",
+      "actual_returned": 3,
+      "ids": [
+        "a80b9a6f4bba6909c36d4339d89c3720",
+        "ea49ca3a265e7c6c8c04e7d968f270f4",
+        "2f7b2187de4ea5f5f85e28e066a5f56c"
+      ],
+      "scores": [
+        0.03278688524590164,
+        0.03007688828584351,
+        0.016129032258064516
+      ]
+    }
+  ],
+  "embedding_API_calls": 0,
+  "embedding_API_cost_usd": 0,
+  "limits": "This verifies retrieval/data reproduction on the same Windows/Python package environment in an isolated directory. It does not rerun the paid controller model or establish cross-platform numerical equality."
+}

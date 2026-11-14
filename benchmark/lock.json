@@ -1,0 +1,13 @@
+{
+  "version": "day07-basic-v1",
+  "locked_at": "2026-11-14T08:49:16.935575+00:00",
+  "files": {
+    "dev.json": "51347723d40f869ff0c6409c2467a9f5a9ff0ce0f11d8617e35cfa5c4c7fd708",
+    "test.json": "369980f93d72f8c4e25f822c56eac7788a904409872ea89607bbfe99fad5c44a",
+    "questions.json": "11d0fae2c041b7edc9474846ab6b72af33a42938bf232d79e539afcba491eb18",
+    "absence_checks.json": "3ffc4118f7b3f505aabeb76e4870fb41671cd1bf6328bfd0faee9f04362e18e6",
+    "protocol.json": "c6303156cb47f407b1a1fda99dafe1da9c4a45d9841b746de9048d75da0f0a05",
+    "REVIEW.md": "543f91468a414053320b6bc5d007c03917c8570d354008de029bc6f7d76ff44c"
+  },
+  "human_review_status": "pending"
+}

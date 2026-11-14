@@ -1,0 +1,14 @@
+{
+  "id": "C0",
+  "method": "dense",
+  "top_k": 3,
+  "context_top_k": 3,
+  "budget_chars": 4000,
+  "max_searches": 1,
+  "max_action_repairs": 1,
+  "candidate_k": 10,
+  "rrf_k": 60,
+  "hypothesis": "Baseline dense retrieval.",
+  "scope_policy": "Use only the question-provided filter, same for every retrieval method.",
+  "action_protocol": "native_tools"
+}

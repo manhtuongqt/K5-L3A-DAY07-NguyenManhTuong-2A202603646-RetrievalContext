@@ -1,0 +1,276 @@
+[
+  {
+    "query_id": "DU01",
+    "scan_method": "Case-insensitive literal scan of every normalized source unit, plus semantic inspection of all relevant source units; absence is not inferred from top-k.",
+    "scanned_source_units": 69,
+    "scanned_documents": 9,
+    "terms_and_matches": {
+      "7800X3D": [],
+      "Ryzen": [],
+      "MB/s": []
+    },
+    "relevant_units_inspected": [
+      {
+        "page": "library_json:u001",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "1e67e10bb5046040e8dcb5aa7718d2d446ce7493851876c922c430f438bb908b"
+      },
+      {
+        "page": "library_json:u002",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "ba23c402ce4eb433a3b424aa8a9965bcf2d28651ba0ab0bf1c2a774edb3ff125"
+      },
+      {
+        "page": "library_json:u003",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "0f218d0634ffa90cf4fc2eeeaf29e057c34a95850634d8a6d7371dfbd28e788d"
+      },
+      {
+        "page": "library_json:u004",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "98f401dca957eecae69dc71f8b8ebe722fb7e9cd56b95e92c4f16fd79bf99fae"
+      },
+      {
+        "page": "library_json:u005",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "f4a9577795de366f562df4b82756ae9bfba77a459f186bc07f29ce6919e2a19c"
+      },
+      {
+        "page": "library_json:u006",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "cabef67388e8a7cbd536e9e3e28b9b5dd1496a559f4d20524ec5a57189cb77e7"
+      },
+      {
+        "page": "library_json:u007",
+        "source": "https://docs.python.org/3.13/library/json.html",
+        "sha256": "7a99caa768bcad38e1be575c81552e7275d0460df1b1394f33b6b7d0a851bddd"
+      }
+    ],
+    "semantic_reason": "The snapshot documents JSON API behavior and examples, not a hardware throughput experiment. No CPU/workload measurement or MB/s table is supplied.",
+    "conclusion": "Insufficient evidence in this fixed corpus; do not supply a fabricated measurement or private configuration.",
+    "review_status": "AI-assisted corpus inspection; human review pending"
+  },
+  {
+    "query_id": "DU02",
+    "scan_method": "Case-insensitive literal scan of every normalized source unit, plus semantic inspection of all relevant source units; absence is not inferred from top-k.",
+    "scanned_source_units": 69,
+    "scanned_documents": 9,
+    "terms_and_matches": {
+      "Acme": [],
+      "network filesystem": [],
+      "maximum recursion depth": []
+    },
+    "relevant_units_inspected": [
+      {
+        "page": "library_pathlib:u001",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "cbc6f621544f62db82e6fc72f06d27b2fee643ad090bc2466bbbb55b19b4bb06"
+      },
+      {
+        "page": "library_pathlib:u002",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "8d5ec324c163c3c4a2a394053c0ac1d14e48294a69de370aec80204735974aa2"
+      },
+      {
+        "page": "library_pathlib:u003",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "1c0eab9d402002f5caacb749a24ccbe7fc3422326d6cd2bd1f7e074335ff9e70"
+      },
+      {
+        "page": "library_pathlib:u004",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6cf66d67f016064c985882e1f9ce37f6b5d9efa666e0b7b08c19bdfd5233e5fa"
+      },
+      {
+        "page": "library_pathlib:u005",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "a84d4ede9d00d27bdb92e199e7c46b4117848e3daf6dbfff91443782141a662f"
+      },
+      {
+        "page": "library_pathlib:u006",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "ba6e8378f4310e791b0233bbed701557fab55e82b80f4bfbaf35fbe4488bbd18"
+      },
+      {
+        "page": "library_pathlib:u007",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6b8578cf3773d6a5274f90a231f6f4b771023d19e7d00c3e4e8d6ef74c7e7aff"
+      },
+      {
+        "page": "library_pathlib:u008",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "ebd904a6287f3f32a29107b3245a3492cdd1a5be9f394591ccca0dd0a5415c0d"
+      },
+      {
+        "page": "library_pathlib:u009",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "e5182abd5bacebbf8fb3844848a61d245775316c3daf7b13cd0939e0026b30a7"
+      },
+      {
+        "page": "library_pathlib:u010",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "394baa74515be2b60a47ec5ae5cb1abed572c3cebce0135b420712160dedf764"
+      },
+      {
+        "page": "library_pathlib:u011",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6f99bf5ca1392081e5e08add161a23f9f04e85f8a7031aa0c4256bda52805682"
+      },
+      {
+        "page": "library_pathlib:u012",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "b5f78150cd742b0760b5f493ac20c7847358fb26ee34c878298d906dc32c3c70"
+      },
+      {
+        "page": "library_pathlib:u013",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "c3fda43b57fee37becfdf2fb01e85fc26f30d1d15e1778cf94271d14f73fc8da"
+      },
+      {
+        "page": "library_pathlib:u014",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "8708d2eb27b6fc8323c403ae2ca064f964a9e954ad0ea528fbadf83170634996"
+      }
+    ],
+    "semantic_reason": "The snapshot documents traversal options, not the private Acme filesystem/deployment. It provides no deployment-specific guaranteed recursion-depth number.",
+    "conclusion": "Insufficient evidence in this fixed corpus; do not supply a fabricated measurement or private configuration.",
+    "review_status": "AI-assisted corpus inspection; human review pending"
+  },
+  {
+    "query_id": "TU01",
+    "scan_method": "Case-insensitive literal scan of every normalized source unit, plus semantic inspection of all relevant source units; absence is not inferred from top-k.",
+    "scanned_source_units": 69,
+    "scanned_documents": 9,
+    "terms_and_matches": {
+      "p95": [],
+      "1 GB": [],
+      "latency": [
+        {
+          "page": "tutorial_controlflow:u004",
+          "count": 2
+        }
+      ]
+    },
+    "relevant_units_inspected": [
+      {
+        "page": "library_csv:u001",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "844aad520ab4329c44b703f8e1c90ffcf41a928ff21f5209b3585aa9e819fe37"
+      },
+      {
+        "page": "library_csv:u002",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "0068e5999428cce92aaafcb1d981c042c97c674af0af0099b2e189c1bb82c738"
+      },
+      {
+        "page": "library_csv:u003",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "9c2ac575d526a238fe3eb05e0edda02b717bb2d07e5e20eeec66e3a495b1461b"
+      },
+      {
+        "page": "library_csv:u004",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "99d2a83abbdb577b3b1f6dc767d009ed014b69ce75cba6a7891ef9dbfcf9c2f1"
+      },
+      {
+        "page": "library_csv:u005",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "bd618893ecd9362b47ff2c0888d29faf2fc4f8d55cefbe04f80d0a84c9984914"
+      },
+      {
+        "page": "library_csv:u006",
+        "source": "https://docs.python.org/3.13/library/csv.html",
+        "sha256": "75f6c0d03f255aa243082a5a4d78c3626ee439b590e4b979410b9e1f9bcaef4f"
+      }
+    ],
+    "semantic_reason": "CSV documentation specifies parsing semantics, not the private upload workload, hardware or a latency SLA. No p95 timing guarantee is stated.",
+    "conclusion": "Insufficient evidence in this fixed corpus; do not supply a fabricated measurement or private configuration.",
+    "review_status": "AI-assisted corpus inspection; human review pending"
+  },
+  {
+    "query_id": "TU02",
+    "scan_method": "Case-insensitive literal scan of every normalized source unit, plus semantic inspection of all relevant source units; absence is not inferred from top-k.",
+    "scanned_source_units": 69,
+    "scanned_documents": 9,
+    "terms_and_matches": {
+      "backup bucket": [],
+      "retention period": [],
+      "production project": []
+    },
+    "relevant_units_inspected": [
+      {
+        "page": "library_pathlib:u001",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "cbc6f621544f62db82e6fc72f06d27b2fee643ad090bc2466bbbb55b19b4bb06"
+      },
+      {
+        "page": "library_pathlib:u002",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "8d5ec324c163c3c4a2a394053c0ac1d14e48294a69de370aec80204735974aa2"
+      },
+      {
+        "page": "library_pathlib:u003",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "1c0eab9d402002f5caacb749a24ccbe7fc3422326d6cd2bd1f7e074335ff9e70"
+      },
+      {
+        "page": "library_pathlib:u004",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6cf66d67f016064c985882e1f9ce37f6b5d9efa666e0b7b08c19bdfd5233e5fa"
+      },
+      {
+        "page": "library_pathlib:u005",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "a84d4ede9d00d27bdb92e199e7c46b4117848e3daf6dbfff91443782141a662f"
+      },
+      {
+        "page": "library_pathlib:u006",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "ba6e8378f4310e791b0233bbed701557fab55e82b80f4bfbaf35fbe4488bbd18"
+      },
+      {
+        "page": "library_pathlib:u007",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6b8578cf3773d6a5274f90a231f6f4b771023d19e7d00c3e4e8d6ef74c7e7aff"
+      },
+      {
+        "page": "library_pathlib:u008",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "ebd904a6287f3f32a29107b3245a3492cdd1a5be9f394591ccca0dd0a5415c0d"
+      },
+      {
+        "page": "library_pathlib:u009",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "e5182abd5bacebbf8fb3844848a61d245775316c3daf7b13cd0939e0026b30a7"
+      },
+      {
+        "page": "library_pathlib:u010",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "394baa74515be2b60a47ec5ae5cb1abed572c3cebce0135b420712160dedf764"
+      },
+      {
+        "page": "library_pathlib:u011",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "6f99bf5ca1392081e5e08add161a23f9f04e85f8a7031aa0c4256bda52805682"
+      },
+      {
+        "page": "library_pathlib:u012",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "b5f78150cd742b0760b5f493ac20c7847358fb26ee34c878298d906dc32c3c70"
+      },
+      {
+        "page": "library_pathlib:u013",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "c3fda43b57fee37becfdf2fb01e85fc26f30d1d15e1778cf94271d14f73fc8da"
+      },
+      {
+        "page": "library_pathlib:u014",
+        "source": "https://docs.python.org/3.13/library/pathlib.html",
+        "sha256": "8708d2eb27b6fc8323c403ae2ca064f964a9e954ad0ea528fbadf83170634996"
+      }
+    ],
+    "semantic_reason": "Path.unlink documents removal and missing_ok, not the production project backup configuration. Neither a bucket identity nor a retention period is given.",
+    "conclusion": "Insufficient evidence in this fixed corpus; do not supply a fabricated measurement or private configuration.",
+    "review_status": "AI-assisted corpus inspection; human review pending"
+  }
+]

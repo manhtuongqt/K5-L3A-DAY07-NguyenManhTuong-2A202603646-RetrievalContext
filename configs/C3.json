@@ -1,0 +1,14 @@
+{
+  "id": "C3",
+  "method": "hybrid",
+  "top_k": 5,
+  "context_top_k": 5,
+  "budget_chars": 8000,
+  "max_searches": 1,
+  "max_action_repairs": 1,
+  "candidate_k": 10,
+  "rrf_k": 60,
+  "hypothesis": "Improvement 2: larger context policy, same fused retriever.",
+  "scope_policy": "Use only the question-provided filter, same for every retrieval method.",
+  "action_protocol": "native_tools"
+}

@@ -1,0 +1,59 @@
+{
+  "prepared_at": "2026-11-14T08:54:56.705133+00:00",
+  "day06_repository": "https://github.com/manhtuongqt/K5-L3A-DAY06-NguyenManhTuong-2A202603646-DataIngestion",
+  "day06_commit": "64c4ab778f81ba5608d4b2b57315f6369aedd0fd",
+  "source_file_sha256": {
+    "results/chunks_B.jsonl": "bcc757f290099109a9361d8f5e7f2812c3ea57901b5048854c93269ccbd808e1",
+    "data/pages.jsonl": "16c33ff8363b1d5b1833a77ec3cf2891a7ead1eea202a51bba092d981cdbf92f",
+    "data/manifest.json": "2db095b271b1eef6ef2bb127366be0a8ab1740af636842a511a7f768cbcc6d4a",
+    "benchmark/model.json": "13ffcb7f358c70015512dfb70e115f8ab86a9b728dd6453e156623ec6c640190",
+    "results/index.json": "3ee3df76100eeabcd9c6da5d15390ff8b5d715bab04d8d6d7b9df22a6d19343f",
+    "THIRD_PARTY_NOTICES.md": "01841c03db7cd26b26fbf5516f3c922c9781ae3fde36dbea2d377db793ba86ca",
+    "data/raw/python_license.html": "ced1a5587f118ad9454a151b721292abe08379b6ce390c5f8b7c165720412ca0"
+  },
+  "chunks": 312,
+  "content_units": 69,
+  "chunk_strategy": "B paragraph max1000; no rechunking",
+  "chunks_sha256": "d29a0d3c7c2efaf0a6ab6bddc3dda3aad4a92255f4a70ef4b7455eb39f2e0a31",
+  "pages_sha256": "16c33ff8363b1d5b1833a77ec3cf2891a7ead1eea202a51bba092d981cdbf92f",
+  "model_lock_sha256": "13ffcb7f358c70015512dfb70e115f8ab86a9b728dd6453e156623ec6c640190",
+  "vectors": {
+    "shape": [
+      312,
+      384
+    ],
+    "sha256": "266db21df0190f393a3c8b2927ef49c1a96b70c42801b628d095bf7157278fc9",
+    "day06_sha256": "266db21df0190f393a3c8b2927ef49c1a96b70c42801b628d095bf7157278fc9",
+    "reused_day06_cache": true,
+    "byte_identical_day06": true,
+    "regeneration_limit": "Same pinned quantized model/pooling/prefix; floating point kernels may differ across platforms. New hash is always recorded."
+  },
+  "store": {
+    "engine": "QdrantClient local persistent",
+    "path": ".local/qdrant_day07",
+    "collection": "day07_B",
+    "count": 312,
+    "distance": "Cosine",
+    "exact_search": true,
+    "obsolete_removed": 0,
+    "sample_payload_and_vector_verified": true
+  },
+  "embedding_api_calls": 0,
+  "embedding_api_cost_usd": 0,
+  "elapsed_seconds": 2.2658611992374063,
+  "source_unit_note": "69 contiguous normalized HTML units, not physical PDF pages; original Day06 offsets unchanged.",
+  "retrieval": {
+    "dense": "Qdrant exact cosine",
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "Unicode NFC casefold words; keep underscores; no stemming"
+    },
+    "hybrid": {
+      "fusion": "RRF",
+      "candidate_per_branch": 10,
+      "k": 60,
+      "tie_break": "chunk ID ascending"
+    }
+  }
+}

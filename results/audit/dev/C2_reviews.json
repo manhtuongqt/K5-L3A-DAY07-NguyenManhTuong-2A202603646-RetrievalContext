@@ -1,0 +1,319 @@
+[
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer gives ValueError for an absent list.remove value, exactly the specific remove contract in its citation; it no longer confuses index/pop/del.",
+    "abstention_correct": null,
+    "query_id": "D01",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The list.remove entry explicitly says it raises ValueError if no equal item exists."
+    ],
+    "trace_sha256": "df4772b1f5af189f09d61aa92593796d83747a00cfa37c827328f5f3e5d7386d",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D01.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer names collections.deque and both-end append/pop performance, exactly the queue recommendation in the cited tutorial paragraph.",
+    "abstention_correct": null,
+    "query_id": "D02",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The cited paragraph explicitly says collections.deque was designed for fast appends and pops from both ends."
+    ],
+    "trace_sha256": "8f1e20f419f77815a84bc6273b1e35236e463aaed33ff8978a7ed4712b03073a",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D02.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer includes both the allowed tuple contents and disqualification by a mutable object directly or indirectly. Both conditions are in the cited dictionary paragraph.",
+    "abstention_correct": null,
+    "query_id": "D03",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source states strings/numbers/tuples may be tuple-key contents and excludes any direct or indirect mutable object."
+    ],
+    "trace_sha256": "db508cfecac730eb86e3e3df358fc7738d1c95035aaf2c1a732cef363b0ab61c",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D03.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer recommends in, explains True/False membership, and adds not in for absence; both examples are supported by the cited dictionary source.",
+    "abstention_correct": null,
+    "query_id": "D04",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly recommends in and demonstrates guido in tel and jack not in tel, supporting both membership and absence checks."
+    ],
+    "trace_sha256": "5b225ed7d893f291b08bd1cb0bfbec5c47f8086c878a0b048c11bac5f0daaaad",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D04.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer gives sorted(set(sequence)) and its iteration idiom, which the source directly demonstrates for distinct elements in sorted order.",
+    "abstention_correct": null,
+    "query_id": "D05",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly recommends and demonstrates sorted(set(...)) for looping over unique sequence elements in sorted order."
+    ],
+    "trace_sha256": "3c6ccd45efe3734e0e07fe7c33008a34e4dbdf9de21efac8f77b243f256f36d5",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D05.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer explains once-at-definition evaluation and a shared mutable list accumulating values across calls; the source contains the warning and example outputs [1], [1,2], [1,2,3].",
+    "abstention_correct": null,
+    "query_id": "D06",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source directly supports definition-time evaluation, one-time default evaluation, mutation across calls and the shared-default condition."
+    ],
+    "trace_sha256": "c8fad345694f4792466a270320ad1d0c9fba2a1337bf07dd503332598095fd31",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D06.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer states endpoint exclusion without unnecessary added claims; the cited range paragraph states this explicitly.",
+    "abstention_correct": null,
+    "query_id": "D07",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly says the given endpoint is never part of the generated sequence."
+    ],
+    "trace_sha256": "c548d0f6563d453b9b6e5b4a0ff19c430151649ad3afefe88cd3461501727500",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D07.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer correctly ties else to normal completion without break, with the for/while distinctions supported explicitly by the cited paragraph.",
+    "abstention_correct": null,
+    "query_id": "D08",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source says no break allows else, explains final iteration/false while condition, and says break skips else."
+    ],
+    "trace_sha256": "5b378523025184935389ae25a7eda9506b89cbd9f0536271bfe04116401fb276",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D08.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The script __main__ answer is supported by the cited if __name__ == \"__main__\" example plus its explanation that this block runs when executed as the main file. This is valid semantic evidence despite missing the frozen full-prose gold alternative; do not change the locked gold metric.",
+    "abstention_correct": null,
+    "query_id": "D09",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source combines the exact __name__ == \"__main__\" guard and script-only execution explanation, supporting the stated __main__ value."
+    ],
+    "trace_sha256": "e8cfcfc2664c82d670b2d306e1c8222cfe2019340720b73c1be1973c61946430",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D09.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer states underscore exclusion, explicit __all__ list convention, namespace hiding, readability concerns and the interactive-use exception. Both cited chunks collectively cover these points; unlike C0, it cites the separate __all__ source.",
+    "abstention_correct": null,
+    "query_id": "D10",
+    "citation_support": [
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "Supports underscore exclusion, unknown-name shadowing, readability and interactive-session exception.",
+      "Supports the explicit __all__ import-list convention with a package initializer example; the answer uses that documented convention for its __all__ qualification."
+    ],
+    "trace_sha256": "820d85b9f1418066720649a86e905e44f189ec6cdc42c7b2a3393f71a5d7feb3",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D10.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer correctly gives __pycache__, versioned .pyc files and the CPython 3.3 example exactly supported by the cited paragraph.",
+    "abstention_correct": null,
+    "query_id": "D11",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source names __pycache__, module.version.pyc and the exact spam.cpython-33.pyc example."
+    ],
+    "trace_sha256": "00b4bbdd8677f8693f8aa4c281b5ee2859dea89b24957acf920cf5e2e2ae336f",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D11.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer gives UTF-8 with the same unless-another-encoding-is-needed condition as the source.",
+    "abstention_correct": null,
+    "query_id": "D12",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The cited paragraph recommends encoding=\"utf-8\" unless another encoding is known to be needed."
+    ],
+    "trace_sha256": "63e75f9218db390c8edf8916b82b211dcef090f55013fb40b6dbb797c81d3488",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D12.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer states automatic exception-safe closure and that with is shorter than equivalent try/finally; these are explicit in the cited source. Releasing file resources is the ordinary meaning of the documented proper closure, not a new external measurement or API condition.",
+    "abstention_correct": null,
+    "query_id": "D13",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Explicitly supports automatic file closure even on exceptions and shorter equivalent try/finally cleanup; proper closure supports the file-resource cleanup statement."
+    ],
+    "trace_sha256": "4c68ed5fa0b395f2fdf488ba63fa3c1a504c5c4e4129b73475488c1cac8a4d00",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D13.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer correctly distinguishes serializing to a JSON string and deserializing back to the hierarchy, matching both definitions in the source.",
+    "abstention_correct": null,
+    "query_id": "D14",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Both serializing and deserializing are defined with the same directions of conversion in the cited paragraph."
+    ],
+    "trace_sha256": "b950772332e9b851fea20d0d63f8f82354e489a13cf5c6d7e1dfab4b59c70d8b",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D14.json"
+  },
+  {
+    "answer_grade": 2,
+    "context_grade": 2,
+    "reason": "The answer correctly explains success-only else and avoiding catching exceptions from code outside the protected try operation. The source states both the execution condition and rationale.",
+    "abstention_correct": null,
+    "query_id": "D15",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "The source explicitly says else runs when try raises no exception and avoids accidentally catching an exception not raised by protected code."
+    ],
+    "trace_sha256": "7b851f6240238ae603d486eeb0ce5c96fc68c72e2f3a5f23ca2008bf201287be",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/D15.json"
+  },
+  {
+    "answer_grade": null,
+    "context_grade": null,
+    "reason": "The response says the supplied JSON context has no benchmark, hardware specification or throughput result and declines the requested MB/s number without guessing.",
+    "abstention_correct": true,
+    "query_id": "DU01",
+    "citation_support": [],
+    "citation_reasons": [],
+    "trace_sha256": "62b94fb6c36e2520e3f8e98ef3e8557ed6ef4a813ff84f93224d6ab5938ef123",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/DU01.json"
+  },
+  {
+    "answer_grade": null,
+    "context_grade": null,
+    "reason": "The response declines any exact recursion-depth or private Acme deployment claim. Its supplementary infinite-symlink-recursion warning is supported by the actual supplied pathlib context, not invented. No inline citation is printed in this version.",
+    "abstention_correct": true,
+    "query_id": "DU02",
+    "citation_support": [],
+    "citation_reasons": [],
+    "trace_sha256": "28959290c532f80379db73614b6b33734aa6911387870c00d1b807a048131098",
+    "inline_citations_not_declared": [],
+    "reviewer": "Codex (AI-assisted semantic draft)",
+    "review_status": "AI-assisted draft; student review pending",
+    "human_confirmed": false,
+    "trace": "results/agent/dev/C2/cases/DU02.json"
+  }
+]

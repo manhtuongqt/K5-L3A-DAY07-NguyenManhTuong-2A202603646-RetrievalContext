@@ -1,0 +1,2 @@
+# Model HTTP adapter uses Python 3.11+ standard library only.
+# Embedding/vector-store dependencies are in requirements.txt.

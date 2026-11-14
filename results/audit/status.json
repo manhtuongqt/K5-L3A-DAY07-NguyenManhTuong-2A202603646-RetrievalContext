@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-11-14T09:16:58.844949+00:00",
+  "benchmark_items_confirmed": 24,
+  "dev_semantic_rows_confirmed": 67,
+  "test_semantic_rows_confirmed": 14,
+  "semantic_rows_confirmed": 81,
+  "pending_required_reviews": 0,
+  "method": "AI-assisted drafts, explicitly reviewed and accepted by the student; exact bytes tied to confirmation files.",
+  "original_packets": "Original pending/draft statuses are preserved as historical snapshots. Current approval is external and exact-hash-bound."
+}

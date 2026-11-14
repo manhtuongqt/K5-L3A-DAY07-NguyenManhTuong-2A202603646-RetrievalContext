@@ -1,0 +1,134 @@
+{
+  "dev/C0": {
+    "cases": 17,
+    "model_calls": 37,
+    "http_attempts": 37,
+    "tool_calls": 17,
+    "model_action_repairs": 3,
+    "provider_reported_tokens": {
+      "input_tokens": 24743,
+      "output_tokens": 2746
+    },
+    "reported_models": {
+      "claude-opus-5": 37
+    },
+    "gateway_native_cost": {
+      "known_total": 74.02,
+      "known_response_count": 37,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  },
+  "dev/C1": {
+    "cases": 17,
+    "model_calls": 35,
+    "http_attempts": 35,
+    "tool_calls": 17,
+    "model_action_repairs": 2,
+    "provider_reported_tokens": {
+      "input_tokens": 22750,
+      "output_tokens": 2603
+    },
+    "reported_models": {
+      "claude-opus-5": 35
+    },
+    "gateway_native_cost": {
+      "known_total": 70.03,
+      "known_response_count": 35,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  },
+  "dev/C2": {
+    "cases": 17,
+    "model_calls": 34,
+    "http_attempts": 34,
+    "tool_calls": 17,
+    "model_action_repairs": 0,
+    "provider_reported_tokens": {
+      "input_tokens": 21547,
+      "output_tokens": 2573
+    },
+    "reported_models": {
+      "claude-opus-5": 34
+    },
+    "gateway_native_cost": {
+      "known_total": 68.04,
+      "known_response_count": 34,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  },
+  "dev/C3": {
+    "cases": 17,
+    "model_calls": 36,
+    "http_attempts": 36,
+    "tool_calls": 17,
+    "model_action_repairs": 2,
+    "provider_reported_tokens": {
+      "input_tokens": 34819,
+      "output_tokens": 2666
+    },
+    "reported_models": {
+      "claude-opus-5": 36
+    },
+    "gateway_native_cost": {
+      "known_total": 78.68,
+      "known_response_count": 36,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  },
+  "test/C0": {
+    "cases": 7,
+    "model_calls": 16,
+    "http_attempts": 16,
+    "tool_calls": 7,
+    "model_action_repairs": 2,
+    "provider_reported_tokens": {
+      "input_tokens": 11269,
+      "output_tokens": 1298
+    },
+    "reported_models": {
+      "claude-opus-5": 16
+    },
+    "gateway_native_cost": {
+      "known_total": 32.01,
+      "known_response_count": 16,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  },
+  "test/C2": {
+    "cases": 7,
+    "model_calls": 15,
+    "http_attempts": 15,
+    "tool_calls": 7,
+    "model_action_repairs": 1,
+    "provider_reported_tokens": {
+      "input_tokens": 10060,
+      "output_tokens": 1227
+    },
+    "reported_models": {
+      "claude-opus-5": 15
+    },
+    "gateway_native_cost": {
+      "known_total": 30.01,
+      "known_response_count": 15,
+      "unknown_response_count": 0,
+      "unit": "provider native unit, not verified",
+      "usd": null
+    },
+    "limit": "Provider-reported usage, not independently measured tokens or a USD invoice. Errors/retries without usage may have unknown cost."
+  }
+}

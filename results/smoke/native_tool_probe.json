@@ -1,0 +1,71 @@
+{
+  "text": "",
+  "tool_calls": [
+    {
+      "id": "toolu_9992e85873184563930f1a6429c84968",
+      "name": "search",
+      "arguments": "{\"query\":\"site:docs.python.org tutorial sorted dictionary keys\"}"
+    }
+  ],
+  "model": "claude-opus-5",
+  "usage": {
+    "input_tokens": 1,
+    "output_tokens": 25,
+    "raw": {
+      "completion_tokens": 25,
+      "inference_geo": "global",
+      "prompt_tokens": 1,
+      "service_tier": "standard",
+      "total_tokens": 26,
+      "x_ckey": {
+        "cost": 2,
+        "cost_is_estimate": false,
+        "request_id": "req_1abcec49a62aa83ca41a4dae"
+      }
+    }
+  },
+  "request_id": "req_1abcec49a62aa83ca41a4dae",
+  "finish_reason": "tool_calls",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "success",
+      "latency_ms": 4485.351700335741,
+      "usage": {
+        "input_tokens": 1,
+        "output_tokens": 25,
+        "raw": {
+          "completion_tokens": 25,
+          "inference_geo": "global",
+          "prompt_tokens": 1,
+          "service_tier": "standard",
+          "total_tokens": 26,
+          "x_ckey": {
+            "cost": 2,
+            "cost_is_estimate": false,
+            "request_id": "req_1abcec49a62aa83ca41a4dae"
+          }
+        }
+      },
+      "request_id": "req_1abcec49a62aa83ca41a4dae"
+    }
+  ],
+  "latency_ms": 4485.356399789453,
+  "raw_sanitized": {
+    "id": "msg_01m4xPgC5GroxD7P9T5RcWjbM3",
+    "model": "claude-opus-5",
+    "usage": {
+      "completion_tokens": 25,
+      "inference_geo": "global",
+      "prompt_tokens": 1,
+      "service_tier": "standard",
+      "total_tokens": 26,
+      "x_ckey": {
+        "cost": 2,
+        "cost_is_estimate": false,
+        "request_id": "req_1abcec49a62aa83ca41a4dae"
+      }
+    },
+    "finish_reason": "tool_calls"
+  }
+}

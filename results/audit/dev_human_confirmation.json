@@ -1,0 +1,424 @@
+{
+  "kind": "dev",
+  "confirmed_at": "2026-11-14T09:08:13.292160+00:00",
+  "reviewer": "Nguyễn Mạnh Tường",
+  "statement": "ok mình xác nhận rồi, chuẩn nhé, không sửa nhãn nào cả.",
+  "source": "Explicit student confirmation in conversation; recorder does not itself constitute review.",
+  "artifact_hashes": {
+    "results/audit/dev/C0_reviews.json": "f74be1fff99b2d79c0c586513d24a88c7463841c7b33797ac0074319a6e497ac",
+    "results/audit/dev/C1_reviews.json": "062d0d23b24e476128ba4cbb03b250144caa58413001105517b1b0d237f08238",
+    "results/audit/dev/C2_reviews.json": "0b4b7bdb0bb148abda28d9680201a8b8092c5578a62754fc1162fe9feec9f7e5",
+    "results/audit/dev/C3_reviews.json": "535743cca3d13bac263625c15cb8940ad762dc9df49c1ee82a451ba5772e9ab9",
+    "results/audit/dev/REVIEW.md": "6e2b9fa9e4281dbb89f13b52cf16ba4d42e47eef09289b7c07c85e89f8672c21",
+    "results/audit/dev/C0_REVIEW.md": "e5d2b67341038490fc12f33b8b429cc8e63e7de022c481cde8cd1c813d2f794e",
+    "results/audit/dev/C1_REVIEW.md": "c858ceb2018e10b33a57f325dfa564d952aed27776e18e78e527feb4da82256b",
+    "results/audit/dev/C2_REVIEW.md": "9c8044ed843fc091a42ffd400fde45af11f8461b601f2054683be668a6b1fe05",
+    "results/audit/dev/C3_REVIEW.md": "95a4da4fc8494b343a736c4316862e7dfc4199078c66a50e27cd922e2ee18856"
+  },
+  "approved_items": [
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D01",
+      "sha256": "4d6827f96b616015fbf18608ff8f184be0bf8f6e6bd6629c1357868f99735dc0"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D02",
+      "sha256": "3ff9676b53c3f331c152d3eb577e1b7c21ef3a8d7264c3a6b854fb80ea65769a"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D03",
+      "sha256": "e5cf86c107c6c3a763bab034c89f99e92a5fccd62d91312019549865a0737304"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D04",
+      "sha256": "bc07edd2a021004431a93d288555000f36555ffd3832f94f59b397e72182f212"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D05",
+      "sha256": "31d31f08d6a5c7016cbcd069e96d4794dfa2f2aed7843b0d286df3bed446f09b"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D06",
+      "sha256": "536f562009c09417dc0106760e957dafd343c9f18913515303b91aed66989b1e"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D07",
+      "sha256": "9b13217760e465edf826d05ea8d56017594bc25edcda144fdfa274c94635de71"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D08",
+      "sha256": "e1e4fb3039f82706e1fef29d8e0cd9372ae75d12698c4d1067df555cf909ddec"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D09",
+      "sha256": "fc5c3faee7547bba4e9b348da253514a6d75fc8e7d1e8a6e21965eff50f628eb"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D10",
+      "sha256": "852be2f8ec5ce013b4378c27ecc17087be4982b4789018d83adfffc71e79ba4e"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D11",
+      "sha256": "b3c5efce482aa2a3736c5be4bc3dae4efc0970a1fe5ea55efe04d17f836cef3e"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D12",
+      "sha256": "acf9347a0cc092f6900fcb1b000653a00455d34397a5d347a9a468741f81a344"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D13",
+      "sha256": "c2daaa31401b52f0942e1db9c06fb32f691a01457a774531bf7988b3daced4d5"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D14",
+      "sha256": "434062f69cb4c0dc327b87e419255e496e191919311f9c85482cf586ca21c686"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "D15",
+      "sha256": "365219c0134c9e0398e3b0bed83343e51313b9a41d68953bf3518fe9b0b01df5"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "DU01",
+      "sha256": "0a7d2e4cf37a5ef6197aba6138e51373c2187dd45c6d95d1f383171a0497bbda"
+    },
+    {
+      "artifact": "results/audit/dev/C0_reviews.json",
+      "config_id": null,
+      "query_id": "DU02",
+      "sha256": "fc8c309101ab53b895857abb98ea108b8a4b7e3b8f8b21ed125c858dc6835c63"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D01",
+      "sha256": "0a0d0c6098b8dde3955d9b6f570afc4326136e9a18ef3b70bd71ad7486653374"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D02",
+      "sha256": "293c83785b0c9a5597d634f49fe5f9b0093b8bf5aa3575ab561fea9360ec505a"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D04",
+      "sha256": "637fb73eb74d9d20c608f43df5325a2ed49988f4c70957130979563ca2172c5a"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D05",
+      "sha256": "f6fdcea4779df6e1bf004d7341ede1208c1bd2454491ec55ed54a3e0efc6900e"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D06",
+      "sha256": "6db9a2168556dbae5bfb308f6eb68aadedd99d37f36c1cf06eb92cc881af0e6c"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D07",
+      "sha256": "b3dbe4dde67fbe92f6b84a6d4e669962fd349151e90f546816077a08ad7ca37d"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D08",
+      "sha256": "7db9969807210e8586e8fc32ef28cce98d1482ed964ebb5a1bacfca696087778"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D09",
+      "sha256": "dc4818684a9af643fc8ae018671014a6c71b81395cd3dcc97b1df7d029bd50e0"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D10",
+      "sha256": "a697392af352537254d63d4d24066b3e324a09d58ed13f6969933ec2e87d2624"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D11",
+      "sha256": "528c0a95a10e4cf261d9962669d60fced29aac900dd97c34c45c4414a49e0ca2"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D12",
+      "sha256": "4f6fb9877c10117119df8f597a79f70df18c2e8b3c208b90d6ddd8d06c648dac"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D13",
+      "sha256": "74f2759a1d48319cc97bd8abb053ca0ee3049ef00aa6e0bf781c282d74af0e0b"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D14",
+      "sha256": "2d1b5dd2ab91951768b914f8df0fa8cd05a937a5e06db26ece5523d4a53ea373"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "D15",
+      "sha256": "e4c0a0f69cb1855a543c6c3a3511d4b58ca2ef6dfa9c4c91695f290b07f9f984"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "DU01",
+      "sha256": "e19f66ccd957cb3d13d097fc3e101974d545db90d3900e1fa611d33e903de3da"
+    },
+    {
+      "artifact": "results/audit/dev/C1_reviews.json",
+      "config_id": null,
+      "query_id": "DU02",
+      "sha256": "de63ddb054714a337a05de230cef87cb65569f015dee2f4111247b2fea3a678b"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D01",
+      "sha256": "8031b1ce19606e7cb3dfb686a8fd836df5ca2f6eb5030078d7704c12a027ef7f"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D02",
+      "sha256": "c2b84730e796328cd105c4720fc7c3ac782891e1fc2cf2b5a45fe909ba6a96f9"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D03",
+      "sha256": "589842e25b136d0f9d3e36d52fe12196a1ff44763b57fd96cb6daa172e61f5be"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D04",
+      "sha256": "aa4b14b36ad38ae42f1fa01cbf1f3867f7d26240003d43d3096c3051a0a96fdd"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D05",
+      "sha256": "fe326b38f9a207c3af51d0ea99ef12e53cb9003c0bf0b559bf68438450ae1674"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D06",
+      "sha256": "5102d4f5b645c7bb4d0b6be7f6c12ef6b032d1d3a5ff49ddd4820c7b86386266"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D07",
+      "sha256": "0f43c47ecac166fdb063fd04d6e3a566c223481533f19bb855ebaaff7f1d2092"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D08",
+      "sha256": "6f562220b9183a4e3f19cb11bac3ebbface977a175b9be01fe9edab59c222fa7"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D09",
+      "sha256": "8855761b5586639e69d9f11fdc952431645391914b35204b750002134459cf39"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D10",
+      "sha256": "c21307885059b42423294d4a8604e391791875d0a043161dd6bbdbbedd866efd"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D11",
+      "sha256": "e30b5489b5b71daf2d4adbeaa08e6cc19947257fb336b4e025ec850d77851fbc"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D12",
+      "sha256": "c7bd026020d107219f1c71e90d4a36529081891ad4e258988ccb2428b880cf51"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D13",
+      "sha256": "8b86e5b32a8642fb0b214ca49da3b245843491d434471e4761cd69537491456b"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D14",
+      "sha256": "e3a092cea559dd75888d7ff470d227d6c3c98ef9505fbdec1a543e8ccb3c7286"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "D15",
+      "sha256": "3a1c4d10cefaffe28c3269b74ee65d3c1a2572e58ed3d4ffd3c4e3f57c018543"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "DU01",
+      "sha256": "49fdb7ad7e4a95b5c60a2a26cb8ab757eaf580ced9e29cd5ededd04519657075"
+    },
+    {
+      "artifact": "results/audit/dev/C2_reviews.json",
+      "config_id": null,
+      "query_id": "DU02",
+      "sha256": "1c9f90833a03289dff59e4533a1cc5608deb5ee6a628aab256a9eba42c661ed8"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D01",
+      "sha256": "d3532f1f3744f2e627b40f7350c9d66390835584ddaffabbce39cfbbcc475758"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D02",
+      "sha256": "5b2d88534abd3d604d31dffd3836487420d1c046879c6763e5784bc07a6ea6dd"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D03",
+      "sha256": "6986aae92dd969fe82433e2420c581486ab73fd85df365f58c3bd7df7512ec99"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D04",
+      "sha256": "a25df15e90d139775d120aa49f1e8e2c1d674aa4be4097ccfc8836f229b72a66"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D05",
+      "sha256": "06e8fa47492863ccd564875f83f837af37628c9cd489d547ef8f712e561e1f8d"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D06",
+      "sha256": "60145ae1bc671cf041accec6e87b003de551514db9a97605cc5af96136f43ec6"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D07",
+      "sha256": "2fb96a385879e932eb8cf81a559ade2a73fbee825c918cb6724e3a76a81574ce"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D08",
+      "sha256": "021f6546fe78f8db94b560f845331e1ee6452cd6ddbc67ec2a3ed4b54f7d7132"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D09",
+      "sha256": "e17aef607e4456d58ed9433944e5ec42f7ec004b0f57c46cf2c1100f7dc808cb"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D10",
+      "sha256": "b72de34b2856d19d8be54ffad386e0fac72e0d9bd53a18371e15f0eb5ca74f32"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D11",
+      "sha256": "176adb9df84434d957832b69860aa50ca670acb3234a0aa2723ce650f0dc4209"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D12",
+      "sha256": "263bf21be8010433a51265d5ef8914c3ec4c913b597b1f9e845172b8e1ac00b7"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D13",
+      "sha256": "3e112d8d09966560ef560085d061df16c7cf3f57bb9f7d247e5c44766e8bc787"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D14",
+      "sha256": "510dae92dd7ef5ee88cf89777ca29fcafbcbcbcd132ac81915304f9c927f8afa"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "D15",
+      "sha256": "aab5ea44c3722b64d882e9f177c3751a1c04a36a57486857e2918d83f97fd70a"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "DU01",
+      "sha256": "873f2d919138992baec8f9dcce7f02670d8b3e4e8da9808abb0cb0b8205b3bc2"
+    },
+    {
+      "artifact": "results/audit/dev/C3_reviews.json",
+      "config_id": null,
+      "query_id": "DU02",
+      "sha256": "8c9218b37839c881fb9b65714069cbf5cdd60a27da20aa9f5b11ec78d7d5ee2d"
+    }
+  ],
+  "count": 67,
+  "draft_provenance": "AI-assisted preparation, reviewed and accepted by the student. Not independent blind annotations."
+}

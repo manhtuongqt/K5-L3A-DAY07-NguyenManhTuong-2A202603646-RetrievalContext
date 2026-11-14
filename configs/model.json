@@ -1,0 +1,17 @@
+{
+  "provider": "configured via local environment; third-party gateway model aliases are provider claims",
+  "api_key_env": "DAY07_API_KEY",
+  "base_url_env": "DAY07_BASE_URL",
+  "model_env": "DAY07_MODEL",
+  "api_style_env": "DAY07_API_STYLE",
+  "action_protocol": "native_tools: model chooses one search/answer/abstain function; optional JSON protocol fallback is explicit per-config, never silent; no fixed queries or gold input",
+  "temperature": 0,
+  "max_tokens": 1600,
+  "max_retries": 1,
+  "timeout_seconds": 120,
+  "pricing": {
+    "input_usd_per_million": null,
+    "output_usd_per_million": null,
+    "status": "unknown until provider-specific price and cache billing are verified; never assume free"
+  }
+}
