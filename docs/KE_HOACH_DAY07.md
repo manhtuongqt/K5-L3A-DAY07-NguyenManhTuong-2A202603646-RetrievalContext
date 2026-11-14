@@ -33,7 +33,7 @@ Các mã G0–G9 bên dưới là cách chia việc của kế hoạch này, kh�
 
 | Thành phần | Bằng chứng hiện tại | Kết luận |
 |---|---|---|
-| Repo cá nhân | `manhtuongqt/K5-L3A-DAY07-2A202603646-NguyenManhTuong-RetrievalContext`; origin cá nhân, upstream đề | Sẵn sàng |
+| Repo cá nhân | `manhtuongqt/K5-L3A-DAY07-NguyenManhTuong-2A202603646-RetrievalContext`; origin cá nhân, upstream đề | Sẵn sàng |
 | Starter | `python -X utf8 -m unittest discover -s tests -v`: 15/15 qua lúc kiểm tra | Chỉ xác nhận hành vi code mẫu |
 | Corpus Day06 | Snapshot Python, 69 đơn vị nội dung; manifest và `data/pages.jsonl` hiện hữu | Có thể tái sử dụng |
 | Chunk đã chọn Day06 | B, 312 chunk; `results/chunks_B.jsonl` và vector `(312,384)` hiện hữu | Dùng làm index cơ bản |

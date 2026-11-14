@@ -102,7 +102,7 @@ Tại snapshot rà soát này, báo cáo cá nhân và `metrics_test.json` đã 
 xác nhận test. Nội dung có các hạng mục tương ứng mẫu: dữ liệu/benchmark,
 retrieval/thử nghiệm, context/agent, nhãn test, lỗi dev, lựa chọn, chi phí và giới hạn.
 README có cài đặt, prepare pinned sources/model/store, dev/freeze/test và lưu ý API.
-Remote origin đúng mẫu `K5-L3A-DAY07-2A202603646-NguyenManhTuong-RetrievalContext`.
+Remote origin đúng mẫu `K5-L3A-DAY07-NguyenManhTuong-2A202603646-RetrievalContext`.
 
 Các bước root đang chốt, cần kiểm tra artifact thực tế trước khi tuyên bố đã nộp:
 
